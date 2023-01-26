@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -62,6 +63,7 @@ public class UserController {
 			ur.save(u);
 			
 			request.setAttribute("porukaLogSucc", "Successful registration. Login to your account.");
+			request.setAttribute("user", u);
 			
 			return "login/login";
 			
@@ -75,22 +77,31 @@ public class UserController {
 //	List<User> findUsersByUsernameAndPassword(String username, String password);
 	
 	@RequestMapping(value = "login", method = RequestMethod.POST)
-	public String login(String username, String password, HttpServletRequest request) {
+	public String login(String username, String password, HttpServletRequest request, Model m) {
 		if (username.isEmpty() || password.isEmpty())
 			return "login/login";
 
 		try {
-			User u = ur.findByUsername(username);
+			User user = ur.findByUsername(username);
+			
+			if (user == null) {
+				request.setAttribute("porukaLog", "Wrong username or password.");
+				return "login/login";
+			}
 			
 			AESEncryptionDecryption aes = new AESEncryptionDecryption();
 			String encryptedPassw = aes.encrypt(password);
 
-			if (u == null || !u.getPassword().equals(encryptedPassw)) {
+			if (!user.getPassword().equals(encryptedPassw)) {
 				request.setAttribute("porukaLog", "Wrong username or password.");
 				return "login/login";
 			}
 
-			return "index";
+			//System.out.println(user.getUsername() + user.getEmail() + user.getFirstName());
+			request.getSession().setAttribute("user", user);
+			
+			
+			return "redirect:/";
 
 		} catch (Exception e) {
 			return "login/login";
