@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Roles</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th> roleId </th>
+			<th> name </th>
+			<th> description </th>
+		</tr>
+		<tr>
+		
+		</tr>
+	</table>
+</body>
+</html>

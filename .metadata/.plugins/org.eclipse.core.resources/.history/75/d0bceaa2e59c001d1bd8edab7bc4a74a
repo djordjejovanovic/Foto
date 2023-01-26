@@ -1,0 +1,15 @@
+package com.example.demo.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import model.User;
+
+public interface UserRepository extends JpaRepository<User, Integer> {
+
+	
+	@Query("select * from user where email = ?1 and password = ?2")
+	List<User> findUsers(String email, String password);
+}

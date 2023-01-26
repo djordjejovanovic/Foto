@@ -1,0 +1,11 @@
+package com.example.demo.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import model.Role;
+
+public interface RoleRepository extends JpaRepository<Role, Integer> {
+
+//	@Query("From fotodb.users U WHERE U.username = ?1 and U.password = ?2")
+//	List<User> findUsersByUsernameAndPassword(String username, String password);
+}
