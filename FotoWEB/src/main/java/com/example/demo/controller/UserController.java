@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.example.demo.AESEncryptionDecryption;
 import com.example.demo.repository.UserRepository;
 
 import model.Role;
@@ -25,8 +26,21 @@ public class UserController {
 	UserRepository ur;
 	
 	@RequestMapping(value = "register", method = RequestMethod.POST)
-	public String register(String email, String firstname, String lastname, String username, String password) {
+	public String register(String email, String firstname, String lastname, String username, String password, String repassword, HttpServletRequest request) {
 		try {
+			
+			User existUser = ur.findByUsername(username);
+
+			if (existUser != null) {
+				request.setAttribute("porukaReg", "Username already exists.");
+				return "login/registration";
+			}
+			
+			if(!password.equals(repassword)) {
+				request.setAttribute("porukaReg", "Those passwords didn't match. Try again.");
+				return "login/registration";
+			}
+
 			
 			User u = new User();
 			
@@ -40,9 +54,14 @@ public class UserController {
 			u.setFirstName(firstname);
 			u.setLastName(lastname);
 			u.setUsername(username);
-			u.setPassword(password);
+			
+			AESEncryptionDecryption aes = new AESEncryptionDecryption();
+			String encryptedPassw = aes.encrypt(password);
+			u.setPassword(encryptedPassw);
 			
 			ur.save(u);
+			
+			request.setAttribute("porukaLogSucc", "Successful registration. Login to your account.");
 			
 			return "login/login";
 			
@@ -62,9 +81,12 @@ public class UserController {
 
 		try {
 			User u = ur.findByUsername(username);
+			
+			AESEncryptionDecryption aes = new AESEncryptionDecryption();
+			String encryptedPassw = aes.encrypt(password);
 
-			if (u == null || !u.getPassword().equals(password)) {
-				request.setAttribute("poruka", "Wrong username or password.");
+			if (u == null || !u.getPassword().equals(encryptedPassw)) {
+				request.setAttribute("porukaLog", "Wrong username or password.");
 				return "login/login";
 			}
 

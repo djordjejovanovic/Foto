@@ -69,7 +69,14 @@
                                             </div>
                                         </div>
                                         <br>
-                                        <p class="px-2">Fill the below form to create a new account.</p>
+                                        <c:choose>
+											<c:when test="${!empty porukaReg }">
+										        <p style="color:red;">${porukaReg }</p>
+											</c:when>
+											<c:otherwise>
+										        <p class="px-2">Fill the below form to create a new account.</p>
+											</c:otherwise>
+										</c:choose>
                                         <div class="card-content">
                                             <div class="card-body pt-0">
                                                 <form action="/Foto/usercontroller/register" method="post">
@@ -101,7 +108,8 @@
                                                         <div class="col-12">
                                                         </div>
                                                     </div>
-                                                    <button type="submit" class="btn btn-primary float-center btn-inline mb-50">Register</a>
+                                                    <button type="submit" class="btn btn-primary float-center btn-inline mb-50">Register</button>
+                                                    <a href="/Foto/login/login.jsp" class="btn btn-outline-primary float-right btn-inline">Back to Login</a>
                                                 </form>
                                             </div>
                                         </div>
