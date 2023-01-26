@@ -20,7 +20,7 @@ public class Pricelist implements Serializable {
 
 	private String formatSize;
 
-	private float pricePerPiece;
+	private int pricePerPiece;
 
 	//bi-directional many-to-one association to Photo
 	@OneToMany(mappedBy="pricelist")
@@ -45,11 +45,11 @@ public class Pricelist implements Serializable {
 		this.formatSize = formatSize;
 	}
 
-	public float getPricePerPiece() {
+	public int getPricePerPiece() {
 		return this.pricePerPiece;
 	}
 
-	public void setPricePerPiece(float pricePerPiece) {
+	public void setPricePerPiece(int pricePerPiece) {
 		this.pricePerPiece = pricePerPiece;
 	}
 

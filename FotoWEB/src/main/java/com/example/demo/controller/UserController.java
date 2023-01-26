@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.persistence.NamedNativeQuery;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Query;
@@ -27,7 +28,8 @@ public class UserController {
 	UserRepository ur;
 	
 	@RequestMapping(value = "register", method = RequestMethod.POST)
-	public String register(String email, String firstname, String lastname, String username, String password, String repassword, HttpServletRequest request) {
+	public String register(String email, String firstname, String lastname, String username, String password, String repassword, HttpServletRequest request,
+				Model m) {
 		try {
 			
 			User existUser = ur.findByUsername(username);
@@ -65,6 +67,10 @@ public class UserController {
 			request.setAttribute("porukaLogSucc", "Successful registration. Login to your account.");
 			request.setAttribute("user", u);
 			
+			request.getSession().setAttribute("user", u);
+			request.getSession().setAttribute("userid", u.getUserId());
+			m.addAttribute("user", u);
+			
 			return "login/login";
 			
 		} catch (Exception e1) {
@@ -72,9 +78,6 @@ public class UserController {
 			return "login/registration";
 		}
 	}
-
-//	@Query("From fotodb.users U WHERE U.username = ?1 and U.password = ?2")
-//	List<User> findUsersByUsernameAndPassword(String username, String password);
 	
 	@RequestMapping(value = "login", method = RequestMethod.POST)
 	public String login(String username, String password, HttpServletRequest request, Model m) {
@@ -97,9 +100,15 @@ public class UserController {
 				return "login/login";
 			}
 
-			//System.out.println(user.getUsername() + user.getEmail() + user.getFirstName());
 			request.getSession().setAttribute("user", user);
+			request.getSession().setAttribute("userid", user.getUserId());
+			request.getSession().setAttribute("username", user.getUsername());
+			request.getSession().setAttribute("firstname", user.getFirstName());
+			request.getSession().setAttribute("lastname", user.getLastName());
+			request.getSession().setAttribute("email", user.getEmail());
+			request.getSession().setAttribute("roleid", user.getRole().getRoleId());
 			
+			m.addAttribute("user", user);
 			
 			return "redirect:/";
 
@@ -108,4 +117,88 @@ public class UserController {
 		}
 		
 	}
+	
+	@RequestMapping(value = "logout", method = RequestMethod.GET)
+	public String logout(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		
+		if(session != null)
+			session.invalidate();
+		
+		return "redirect:/";
+	}
+	
+	@RequestMapping(value = "updateUser", method = RequestMethod.POST)
+	public String updateUser(String username, String firstname, String lastname, String email, HttpServletRequest request) {
+		
+		int userid = (int) request.getSession().getAttribute("userid");
+		User user = ur.findById(userid);
+		
+		if(user != null) {
+			user.setUsername(username);
+			user.setFirstName(firstname);
+			user.setLastName(lastname);
+			user.setEmail(email);
+			
+			ur.save(user);
+			
+			request.getSession().setAttribute("user", user);
+			request.getSession().setAttribute("username", user.getUsername());
+			request.getSession().setAttribute("firstname", user.getFirstName());
+			request.getSession().setAttribute("lastname", user.getLastName());
+			request.getSession().setAttribute("email", user.getEmail());
+			
+			request.setAttribute("porukaUpdateSucc", "User succesfuly updated.");
+		}
+		
+		return "login/account_settings";
+	}
+	
+	@RequestMapping(value = "changePassword", method = RequestMethod.POST)
+	public String changePassword(String oldpassword, String newpassword, String renewpassword, HttpServletRequest request) {
+		
+			int userid = (int) request.getSession().getAttribute("userid");
+			User user = ur.findById(userid);
+						
+			if(user != null && !user.getPassword().isEmpty()) {
+				
+				AESEncryptionDecryption aes = new AESEncryptionDecryption();
+				String encryptedPassw = aes.encrypt(oldpassword);
+				
+				if(!user.getPassword().equals(encryptedPassw)) {
+					request.setAttribute("porukaPassWr", "Wrong old password.");
+					return "login/account_settings";
+				} else if (!newpassword.equals(renewpassword)) {
+					request.setAttribute("porukaPassWr", "Those passwords didn't match. Try again.");
+					return "login/account_settings";
+				}
+				
+				String newEncrPassw = aes.encrypt(newpassword);
+				user.setPassword(newEncrPassw);
+				ur.save(user);
+			}
+			
+			request.setAttribute("porukaPassSucc", "Password succesfuly changed.");
+			return "login/account_settings";
+	}
+	
+	@RequestMapping(value = "viewAllUsers", method = RequestMethod.GET)
+	public String viewAllUsers(HttpServletRequest request, Model m) {
+		
+		if (request.getSession().getAttribute("user") != null) {
+
+			int roleid = (int) request.getSession().getAttribute("roleid");
+
+			if (roleid == 1) {
+				List<User> users = ur.findAll();
+				request.setAttribute("users", users);
+				m.addAttribute("users", users);
+
+				return "users/users";
+			}
+		}
+		
+		return "redirect:/";
+	}
+
 }
