@@ -123,140 +123,6 @@
 			</div>
 		</div>
 	</nav>
-	<ul class="main-search-list-defaultlist d-none">
-		<li class="d-flex align-items-center"><a class="pb-25" href="#">
-				<h6 class="text-primary mb-0">Files</h6>
-		</a></li>
-		<li class="auto-suggestion d-flex align-items-center cursor-pointer"><a
-			class="d-flex align-items-center justify-content-between w-100"
-			href="#">
-				<div class="d-flex">
-					<div class="mr-50">
-						<img src="../css/app-assets/images/icons/xls.png" alt="png"
-							height="32">
-					</div>
-					<div class="search-data">
-						<p class="search-data-title mb-0">Two new item submitted</p>
-						<small class="text-muted">Marketing Manager</small>
-					</div>
-				</div>
-				<small class="search-data-size mr-50 text-muted">&apos;17kb</small>
-		</a></li>
-		<li class="auto-suggestion d-flex align-items-center cursor-pointer"><a
-			class="d-flex align-items-center justify-content-between w-100"
-			href="#">
-				<div class="d-flex">
-					<div class="mr-50">
-						<img src="../css/app-assets/images/icons/jpg.png" alt="png"
-							height="32">
-					</div>
-					<div class="search-data">
-						<p class="search-data-title mb-0">52 JPG file Generated</p>
-						<small class="text-muted">FontEnd Developer</small>
-					</div>
-				</div>
-				<small class="search-data-size mr-50 text-muted">&apos;11kb</small>
-		</a></li>
-		<li class="auto-suggestion d-flex align-items-center cursor-pointer"><a
-			class="d-flex align-items-center justify-content-between w-100"
-			href="#">
-				<div class="d-flex">
-					<div class="mr-50">
-						<img src="../css/app-assets/images/icons/pdf.png" alt="png"
-							height="32">
-					</div>
-					<div class="search-data">
-						<p class="search-data-title mb-0">25 PDF File Uploaded</p>
-						<small class="text-muted">Digital Marketing Manager</small>
-					</div>
-				</div>
-				<small class="search-data-size mr-50 text-muted">&apos;150kb</small>
-		</a></li>
-		<li class="auto-suggestion d-flex align-items-center cursor-pointer"><a
-			class="d-flex align-items-center justify-content-between w-100"
-			href="#">
-				<div class="d-flex">
-					<div class="mr-50">
-						<img src="../css/app-assets/images/icons/doc.png" alt="png"
-							height="32">
-					</div>
-					<div class="search-data">
-						<p class="search-data-title mb-0">Anna_Strong</p>
-						<small class="text-muted">Web Designer</small>
-					</div>
-				</div>
-				<small class="search-data-size mr-50 text-muted">&apos;256kb</small>
-		</a></li>
-		<li class="d-flex align-items-center"><a class="pb-25" href="#">
-				<h6 class="text-primary mb-0">Members</h6>
-		</a></li>
-		<li class="auto-suggestion d-flex align-items-center cursor-pointer"><a
-			class="d-flex align-items-center justify-content-between py-50 w-100"
-			href="#">
-				<div class="d-flex align-items-center">
-					<div class="avatar mr-50">
-						<img src="../css/app-assets/images/portrait/small/avatar-s-8.jpg"
-							alt="png" height="32">
-					</div>
-					<div class="search-data">
-						<p class="search-data-title mb-0">John Doe</p>
-						<small class="text-muted">UI designer</small>
-					</div>
-				</div>
-		</a></li>
-		<li class="auto-suggestion d-flex align-items-center cursor-pointer"><a
-			class="d-flex align-items-center justify-content-between py-50 w-100"
-			href="#">
-				<div class="d-flex align-items-center">
-					<div class="avatar mr-50">
-						<img src="../css/app-assets/images/portrait/small/avatar-s-1.jpg"
-							alt="png" height="32">
-					</div>
-					<div class="search-data">
-						<p class="search-data-title mb-0">Michal Clark</p>
-						<small class="text-muted">FontEnd Developer</small>
-					</div>
-				</div>
-		</a></li>
-		<li class="auto-suggestion d-flex align-items-center cursor-pointer"><a
-			class="d-flex align-items-center justify-content-between py-50 w-100"
-			href="#">
-				<div class="d-flex align-items-center">
-					<div class="avatar mr-50">
-						<img src="../css/app-assets/images/portrait/small/avatar-s-14.jpg"
-							alt="png" height="32">
-					</div>
-					<div class="search-data">
-						<p class="search-data-title mb-0">Milena Gibson</p>
-						<small class="text-muted">Digital Marketing Manager</small>
-					</div>
-				</div>
-		</a></li>
-		<li class="auto-suggestion d-flex align-items-center cursor-pointer"><a
-			class="d-flex align-items-center justify-content-between py-50 w-100"
-			href="#">
-				<div class="d-flex align-items-center">
-					<div class="avatar mr-50">
-						<img src="../css/app-assets/images/portrait/small/avatar-s-6.jpg"
-							alt="png" height="32">
-					</div>
-					<div class="search-data">
-						<p class="search-data-title mb-0">Anna Strong</p>
-						<small class="text-muted">Web Designer</small>
-					</div>
-				</div>
-		</a></li>
-	</ul>
-	<ul class="main-search-list-defaultlist-other-list d-none">
-		<li
-			class="auto-suggestion d-flex align-items-center justify-content-between cursor-pointer"><a
-			class="d-flex align-items-center justify-content-between w-100 py-50">
-				<div class="d-flex justify-content-start">
-					<span class="mr-75 feather icon-alert-circle"></span><span>No
-						results found.</span>
-				</div>
-		</a></li>
-	</ul>
 	<!-- END: Header-->
 
 
@@ -291,14 +157,14 @@
 							class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i
 								class="feather icon-shopping-cart"></i><span data-i18n="Orders">Orders</span></a>
 							<ul class="dropdown-menu">
-								<li data-menu=""><a class="dropdown-item" href="#"
+								<li data-menu=""><a class="dropdown-item" href="/Foto/ordercontroller/prepareCreateOrder"
 									data-toggle="dropdown" data-i18n="Create new order"><i
 										class="feather icon-file"></i>Create new order</a></li>
-								<li data-menu=""><a class="dropdown-item" href="#"
+								<li data-menu=""><a class="dropdown-item" href="/Foto/ordercontroller/myOrders"
 									data-toggle="dropdown" data-i18n="My orders"><i
 										class="feather icon-file-text"></i>My orders</a></li>
 								<c:if test="${roleid == 1 }">
-									<li data-menu=""><a class="dropdown-item" href="#"
+									<li data-menu=""><a class="dropdown-item" href="/Foto/ordercontroller/allOrders"
 										data-toggle="dropdown" data-i18n="All Orders"><i
 											class="feather icon-file-text"></i>All Orders</a></li>
 								</c:if>
@@ -320,8 +186,8 @@
 								class="feather icon-file-text"></i><span data-i18n="Bills">Bills</span></a>
 							<ul class="dropdown-menu">
 								<li data-menu=""><a class="dropdown-item" href="#"
-									data-toggle="dropdown" data-i18n="Bills"><i
-										class="feather icon-file-text"></i>Bills</a></li>
+									data-toggle="dropdown" data-i18n="My Bills"><i
+										class="feather icon-file-text"></i>My Bills</a></li>
 								<c:if test="${roleid == 1 }">
 									<li data-menu=""><a class="dropdown-item" href="#"
 										data-toggle="dropdown" data-i18n="All Bills"><i

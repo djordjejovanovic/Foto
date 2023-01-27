@@ -1,0 +1,73 @@
+package com.example.demo.controller;
+
+import java.util.Date;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.example.demo.repository.OrderRepository;
+import com.example.demo.repository.PricelistRepository;
+
+import model.Order;
+import model.Pricelist;
+import model.User;
+
+@Controller
+@RequestMapping(value = "ordercontroller")
+public class OrderController {
+	
+	@Autowired
+	OrderRepository or;
+	
+	@Autowired
+	PricelistRepository pr;
+	
+	@RequestMapping(value = "createOrder")
+	public String createOrder(HttpServletRequest request, Model m) {
+		
+		Order order = new Order();
+		
+		User user = (User) request.getSession().getAttribute("user");
+		order.setUserId(user.getUserId());
+		order.setDone(false);
+		order.setCreationDate(new Date());
+		order.setName("Novi naziv");
+		
+		or.save(order);
+		
+		return "orders/orders";
+	}
+	
+	@RequestMapping(value = "myOrders")
+	public String myOrders(HttpServletRequest request, Model m) {
+		
+		User user = (User) request.getSession().getAttribute("user");
+		
+		List<Order> orders = null;
+		orders = or.findAllByUserId(user.getUserId());
+		
+		if(orders != null && !orders.isEmpty()) {
+			request.getSession().setAttribute("orders", orders);
+			m.addAttribute("orders", orders);
+		}
+	
+		return "orders/orders";
+	}
+	
+	@RequestMapping(value = "getFormatForOrder")
+	public String getFormatForOrder(HttpServletRequest request, Model m) {
+		
+		List<Pricelist> pl = pr.findAll();
+		
+		if
+		
+		return "order/createorder";
+	}
+
+}

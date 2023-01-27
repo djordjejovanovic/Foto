@@ -125,7 +125,7 @@ public class UserController {
 		if(session != null)
 			session.invalidate();
 		
-		return "redirect:/";
+		return "login/login";
 	}
 	
 	@RequestMapping(value = "updateUser", method = RequestMethod.POST)

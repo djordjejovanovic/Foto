@@ -19,6 +19,8 @@ public class Photo implements Serializable {
 	private int photoId;
 
 	private int quantity;
+	
+	private String name;
 
 	//bi-directional many-to-one association to Order
 	@ManyToOne
@@ -62,6 +64,14 @@ public class Photo implements Serializable {
 
 	public void setPricelist(Pricelist pricelist) {
 		this.pricelist = pricelist;
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }

@@ -6,4 +6,5 @@ import model.Pricelist;
 
 public interface PricelistRepository extends JpaRepository<Pricelist, Integer> {
 
+	Pricelist findByFormatId(int formatId);
 }

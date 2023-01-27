@@ -5,6 +5,8 @@ E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\.metadata\.plugins\org.e
 \FotoWEB\src\main\java
 E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4038587777.index
 \FotoWEB\src\main\java
+E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1649126335.index
+\FotoWEB\src\main\java
 E:\PMF NS\Razvoj Informacionih Sistema\Projekat\Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4038587777.index
 \FotoWEB\src\main\java
 E:\PMF NS\Razvoj Informacionih Sistema\Projekat\Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1108814799.index

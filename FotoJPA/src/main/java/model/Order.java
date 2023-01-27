@@ -2,6 +2,8 @@ package model;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
+import java.util.Date;
 import java.util.List;
 
 
@@ -19,9 +21,13 @@ public class Order implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int orderId;
 
-	private byte done;
+	private boolean done;
 
-	private int users_UserId;
+	private int userId;
+	
+	private Date creationDate;
+	
+	private String name;
 
 	//bi-directional many-to-one association to Bill
 	@OneToMany(mappedBy="order")
@@ -42,20 +48,20 @@ public class Order implements Serializable {
 		this.orderId = orderId;
 	}
 
-	public byte getDone() {
+	public boolean getDone() {
 		return this.done;
 	}
 
-	public void setDone(byte done) {
+	public void setDone(Boolean done) {
 		this.done = done;
 	}
 
-	public int getUsers_UserId() {
-		return this.users_UserId;
+	public int userId() {
+		return this.userId;
 	}
 
-	public void setUsers_UserId(int users_UserId) {
-		this.users_UserId = users_UserId;
+	public void setUserId(int UserId) {
+		this.userId = UserId;
 	}
 
 	public List<Bill> getBills() {
@@ -100,6 +106,22 @@ public class Order implements Serializable {
 		photo.setOrder(null);
 
 		return photo;
+	}
+	
+	public Date getCreationDate() {
+		return creationDate;
+	}
+
+	public void setCreationDate(Date creationDate) {
+		this.creationDate = creationDate;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }
