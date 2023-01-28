@@ -2,6 +2,8 @@
     pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="s" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
@@ -590,7 +592,7 @@
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body">
-                                        <form class="form-horizontal" action="/Foto/ordercontroller/createOrder" method="post">
+                                        <form:form class="form-horizontal" action="/Foto/ordercontroller/createOrder" method="post" enctype="multipart/form-data">
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
@@ -600,19 +602,18 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                               </div>
-                                                <!-- 
+                                               </div> 
                                                 <div class="row">
-	                                                <div class="col-sm-6">
-	                                                    <div class="form-group">
-	                                                        <div class="controls">
-	                                                            <label for="order-name">Order Name</label>
-	                                                            <input type="text" name="ordername" class="form-control" placeholder="Order Name" required data-validation-required-message="Order Name field is required">
-	                                                        </div>
-	                                                    </div>
-	                                                </div>
+	                                                <div class="col-lg-6 col-md-12">
+													<fieldset class="form-group">
+														<label for="basicInputFile">Add Photo</label>
+														<div class="custom-file">
+															<input type="file" class="custom-file-input" name="slika">
+															<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+														</div>
+													</fieldset>
+												</div>
                                             	</div>
-                                            	 -->
                                             	<div class="row">
                                             		<div class="col-sm-6">
                                                         <div class="form-group">
@@ -635,7 +636,7 @@
 													</div>
 												</div>
                                             <button type="submit" class="btn btn-primary">Submit</button>
-                                        </form>
+                                        </form:form>
                                     </div>
                                 </div>
                             </div>

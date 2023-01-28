@@ -1,6 +1,9 @@
 package com.example.demo.controller;
 
+import java.io.File;
+import java.nio.file.Files;
 import java.util.Date;
+
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -10,6 +13,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.repository.BillsRepository;
 import com.example.demo.repository.OrderRepository;
@@ -39,21 +44,29 @@ public class OrderController {
 	BillsRepository billrepo;
 	
 	public List<Order> getOrders(User user) {
-		
+		System.out.println("1");
 		List<Order> orders = null;
 		
-		if(user.getRole().getRoleId() == 1) {
-			orders = or.findAll();
-		}
-		else {
-			orders = or.findAllByUserId(user.getUserId());
-		}
+//		if(user.getRole().getRoleId() == 1) {
+//			System.out.println("2");
+//			orders = or.findAll();
+//		}
+//		else {
+//			System.out.println("3");
+//			orders = or.findAllByUserId(user.getUserId());
+//		}
 		
+		orders = or.findAllByUserId(user.getUserId());
 		return orders;
 	}
 	
 	@RequestMapping(value = "createOrder", method = RequestMethod.POST)
-	public String createOrder(String ordername, String format, int quantity, HttpServletRequest request, Model m) {
+	public String createOrder(String ordername, String format, int quantity, @RequestParam MultipartFile slika, HttpServletRequest request, Model m) {
+		
+		if (slika == null) {
+			request.setAttribute("photoFaild", "Failure.");
+			return "orders/createorder";
+		}
 		
 		Order order = new Order();
 		
@@ -74,10 +87,29 @@ public class OrderController {
 		
 		photo.setPricelist(pl);
 		photo.setOrder(order);
+
+		String photoName = slika.getOriginalFilename();
+		photo.setName(photoName);
 		
-		photo.setName("Foto1");
+		String filePath;
+		try {
+			filePath = System.getProperty("user.dir");
+			filePath += "/photos";
+			File imageFile = new File(filePath, photoName);
+
+			slika.transferTo(imageFile);
+			photo.setPhoto(Files.readAllBytes(imageFile.toPath()));
+			
+			photo = photorepo.save(photo);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			or.deleteById(order.getOrderId());
+			request.setAttribute("photoFaild", "Failure.");
+			System.out.println("exception");
+			return "orders/createorder";
+		}
 		
-		photo = photorepo.save(photo);
 		request.setAttribute("saveOrderSucc", "Successfuly ordered photo.");
 		
 		Bill bill = new Bill();
@@ -96,7 +128,7 @@ public class OrderController {
 		return "orders/orders";
 	}
 	
-	@RequestMapping(value = "myOrders")
+	@RequestMapping(value = "myOrders", method = RequestMethod.GET)
 	public String myOrders(HttpServletRequest request, Model m) {
 		
 		User user = (User) request.getSession().getAttribute("user");

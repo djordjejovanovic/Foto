@@ -31,6 +31,18 @@ public class Photo implements Serializable {
 	@ManyToOne
 	private Pricelist pricelist;
 
+	@Lob
+	@Column(name="Photo", columnDefinition="LONGBLOB")
+	private byte[] photo;
+
+	public byte[] getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(byte[] photo) {
+		this.photo = photo;
+	}
+
 	public Photo() {
 	}
 
