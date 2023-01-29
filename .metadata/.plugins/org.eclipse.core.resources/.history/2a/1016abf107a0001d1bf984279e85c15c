@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="OrdersReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8c167ffe-9ee1-42b9-bb37-8edb188b5158">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="username" class="java.lang.String"/>
+	<field name="orderName" class="java.lang.String"/>
+	<field name="creationDate" class="java.util.Date"/>
+	<field name="price" class="java.lang.Integer"/>
+	<field name="status" class="java.lang.String"/>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{username}]]></groupExpression>
+		<groupHeader>
+			<band height="67">
+				<staticText>
+					<reportElement x="82" y="20" width="100" height="39" uuid="2b8fc87d-183c-4e4b-901d-06dae6cfb3f9"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Order Report for:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="180" y="20" width="200" height="39" uuid="369d0356-e51f-440c-a33e-e56c2f355928"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="50"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="79" uuid="72cb94fc-3fe6-4f26-92dd-9f203112154d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Eras Demi ITC" size="20"/>
+				</textElement>
+				<text><![CDATA[Orders Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="454" y="0" width="100" height="30" uuid="5a50cc71-637b-448d-86a9-990e2c8a8126"/>
+				<textElement textAlignment="Right">
+					<font fontName="Baskerville Old Face" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FotoProj]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="80" y="41" width="100" height="30" forecolor="#10163A" backcolor="#C2C6DC" uuid="e33fc5f6-1911-4a3e-a827-e9fcdf9209f3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{orderName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="80" y="11" width="100" height="30" forecolor="#C2C6DC" backcolor="#10163A" uuid="b0f3ad57-a1cc-4589-8bb5-809f08820cff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Order Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="180" y="41" width="100" height="30" forecolor="#10163A" backcolor="#C2C6DC" uuid="bb08ee83-d63e-42ec-969d-bcb4cce1cec9"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="11" width="100" height="30" forecolor="#C2C6DC" backcolor="#10163A" uuid="418ee6d8-dfdf-4154-b51f-447315037cb6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="280" y="41" width="100" height="30" forecolor="#10163A" backcolor="#C2C6DC" uuid="e63b9ad9-3ca1-4b95-bf08-e4ef0f0a7fe6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="280" y="11" width="100" height="30" forecolor="#C2C6DC" backcolor="#10163A" uuid="abeefa8b-1ed7-4a6e-b96c-83eccadf22c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="380" y="41" width="100" height="30" forecolor="#10163A" backcolor="#C2C6DC" uuid="2edf1cb7-79e6-4f41-baf3-4af8208f8b13"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{creationDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="380" y="11" width="100" height="30" forecolor="#C2C6DC" backcolor="#10163A" uuid="f02a56fc-7670-4d29-95d3-ef9b3bfa2f6a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Creation Date]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -230,6 +230,8 @@
 								<ol class="breadcrumb">
 									<li class="breadcrumb-item"><a href="/Foto">Home</a></li>
 									<li class="breadcrumb-item active">My Orders</li>
+									<li><a href="/Foto/ordercontroller/myOrdersReport" class="btn btn-primary"
+									style="margin-top: 10px; margin-left: 10px">Report</a></li>
 								</ol>
 							</div>
 						</div>

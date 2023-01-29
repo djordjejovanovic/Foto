@@ -27,7 +27,7 @@ public class Order implements Serializable {
 
 	@Column(name="UserId")
 	private int userId;
-	
+
 	@Column(name="CreationDate")
 	private Date creationDate;
 	
@@ -65,6 +65,10 @@ public class Order implements Serializable {
 		return this.userId;
 	}
 
+	public int getUserId() {
+		return userId;
+	}
+	
 	public void setUserId(int UserId) {
 		this.userId = UserId;
 	}

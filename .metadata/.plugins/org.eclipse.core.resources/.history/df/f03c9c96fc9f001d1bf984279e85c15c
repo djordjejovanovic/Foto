@@ -1,0 +1,16 @@
+package com.example.demo;
+
+import java.util.Date;
+
+public class OrderReportModel {
+
+	public String username;
+	
+	public String orderName;
+	
+	public Date creationDate;
+	
+	public int price;
+	
+	public boolean status;
+}
