@@ -1,0 +1,14 @@
+package com.example.demo.repository;
+
+import javax.persistence.NamedQuery;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import model.Photo;
+
+public interface PhotoRepository extends JpaRepository<Photo, Integer>{
+	
+	@NamedQuery(name="Photo.findAll", query="SELECT p FROM Photo p")
+	Photo findByOrderId(int orderId);
+
+}

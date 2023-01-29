@@ -1,0 +1,7 @@
+package com.example.demo;
+
+public class BillWithUser {
+
+	public int billId;
+	
+}

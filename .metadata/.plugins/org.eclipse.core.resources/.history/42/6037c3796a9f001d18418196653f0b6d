@@ -1,0 +1,19 @@
+package com.example.demo;
+
+import java.util.Date;
+
+
+public class OrderWithPhoto {
+
+	private int orderId;
+
+	private boolean done;
+
+	private int userId;
+	
+	private Date creationDate;
+	
+	private String name;
+	
+	
+}

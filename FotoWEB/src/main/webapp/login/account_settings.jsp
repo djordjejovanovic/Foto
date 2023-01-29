@@ -67,7 +67,7 @@
 						class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
 						<ul class="nav navbar-nav">
 							<li class="nav-item mobile-menu d-xl-none mr-auto"><a
-								class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+								class="nav-link nav-menu-main menu-toggle hidden-xs" href=""><i
 									class="ficon feather icon-menu"></i></a></li>
 						</ul>
 					</div>
@@ -76,25 +76,32 @@
 							class="nav-link nav-link-expand"><i
 							class="ficon feather icon-maximize"></i></a>
 						</li>
-						<li class="dropdown dropdown-user nav-item"><a
-							class="dropdown-toggle nav-link dropdown-user-link" href="#"
-							data-toggle="dropdown">
-								<div class="user-nav d-sm-flex d-none">
-									<span class="user-name text-bold-600">${user.username }</span>
-									<span class="user-status">Available</span>
-								</div> <span><img class="round"
-									src="../css/app-assets/images/portrait/small/avatar-s-11.jpg"
-									alt="avatar" height="40" width="40"></span>
-						</a>
-							<div class="dropdown-menu dropdown-menu-right">
-								<a class="dropdown-item" href="/Foto/login/account_settings.jsp"> <i
-									class="feather icon-user"></i> Edit Profile
+						<c:choose>
+							<c:when test="${!empty user}">
+								<li class="dropdown dropdown-user nav-item"><a
+									class="dropdown-toggle nav-link dropdown-user-link" href=""
+									data-toggle="dropdown">
+										<div class="user-nav d-sm-flex d-none">
+											<span class="user-name text-bold-600">${user.username }</span>
+											<span class="user-status">Available</span>
+										</div> <span><img class="round"
+											src="../css/app-assets/images/portrait/small/avatar-s-11.jpg"
+											alt="avatar" height="40" width="40"></span>
 								</a>
-								<div class="dropdown-divider"></div>
+									<div class="dropdown-menu dropdown-menu-right">
+										<a class="dropdown-item" href="/Foto/login/account_settings.jsp"> <i
+											class="feather icon-user"></i> Edit Profile
+										</a>
+										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="/Foto/usercontroller/logout"><i
 											class="feather icon-power"></i> Logout</a>
-							</div>
-						</li>
+									</div></li>
+							</c:when>
+							<c:otherwise>
+								<li><a href="/Foto/login/login.jsp" class="btn btn-primary"
+									style="margin-top: 10px; margin-left: 10px">Login</a></li>
+							</c:otherwise>
+						</c:choose>
 					</ul>
 				</div>
 			</div>
@@ -105,15 +112,19 @@
     <div class="horizontal-menu-wrapper">
         <div class="header-navbar navbar-expand-sm navbar navbar-horizontal floating-nav navbar-dark navbar-without-dd-arrow navbar-shadow menu-border" role="navigation" data-menu="menu-wrapper">
             <div class="navbar-header">
-                <ul class="nav navbar-nav flex-row">
-                    <li class="nav-item mr-auto"><a class="navbar-brand" href="../css//html/ltr/horizontal-menu-template-dark/index.html">
-                            <div class="brand-logo"></div>
-                            <h2 class="brand-text mb-0">Vuexy</h2>
-                        </a></li>
-                    <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
-                </ul>
-            </div>
-            <!-- Horizontal menu content-->
+				<ul class="nav navbar-nav flex-row">
+					<li class="nav-item mr-auto"><a class="navbar-brand"
+						href="/">
+							<div class="brand-logo"></div>
+							<h2 class="brand-text mb-0">FotoProj</h2>
+					</a></li>
+					<li class="nav-item nav-toggle"><a
+						class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i
+							class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i
+							class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary"
+							data-ticon="icon-disc"></i></a></li>
+				</ul>
+			</div>
             <!-- Horizontal menu content-->
 			<div class="navbar-container main-menu-content"
 				data-menu="menu-container">
@@ -123,17 +134,17 @@
 
 					<c:if test="${!empty user }">
 						<li class="dropdown nav-item" data-menu="dropdown"><a
-							class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i
+							class="dropdown-toggle nav-link" href="" data-toggle="dropdown"><i
 								class="feather icon-shopping-cart"></i><span data-i18n="Orders">Orders</span></a>
 							<ul class="dropdown-menu">
-								<li data-menu=""><a class="dropdown-item" href="#"
+								<li data-menu=""><a class="dropdown-item" href="/Foto/ordercontroller/prepareCreateOrder"
 									data-toggle="dropdown" data-i18n="Create new order"><i
 										class="feather icon-file"></i>Create new order</a></li>
-								<li data-menu=""><a class="dropdown-item" href="#"
+								<li data-menu=""><a class="dropdown-item" href="/Foto/ordercontroller/myOrders"
 									data-toggle="dropdown" data-i18n="My orders"><i
 										class="feather icon-file-text"></i>My orders</a></li>
 								<c:if test="${roleid == 1 }">
-									<li data-menu=""><a class="dropdown-item" href="#"
+									<li data-menu=""><a class="dropdown-item" href="/Foto/ordercontroller/allOrders"
 										data-toggle="dropdown" data-i18n="All Orders"><i
 											class="feather icon-file-text"></i>All Orders</a></li>
 								</c:if>
@@ -141,7 +152,7 @@
 					</c:if>
 
 					<li class="dropdown nav-item" data-menu="dropdown"><a
-						class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i
+						class="dropdown-toggle nav-link" href="" data-toggle="dropdown"><i
 							class="feather icon-list"></i><span data-i18n="Pricelist">Pricelist</span></a>
 						<ul class="dropdown-menu">
 							<li data-menu=""><a class="dropdown-item" href="/Foto/pricelistcontroller/getPricelist"
@@ -151,14 +162,14 @@
 
 					<c:if test="${!empty user }">
 						<li class="dropdown nav-item" data-menu="dropdown"><a
-							class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i
+							class="dropdown-toggle nav-link" href="" data-toggle="dropdown"><i
 								class="feather icon-file-text"></i><span data-i18n="Bills">Bills</span></a>
 							<ul class="dropdown-menu">
-								<li data-menu=""><a class="dropdown-item" href="#"
-									data-toggle="dropdown" data-i18n="Bills"><i
-										class="feather icon-file-text"></i>Bills</a></li>
+								<li data-menu=""><a class="dropdown-item" href="/Foto/billcontroller/getMyBills"
+									data-toggle="dropdown" data-i18n="My Bills"><i
+										class="feather icon-file-text"></i>My Bills</a></li>
 								<c:if test="${roleid == 1 }">
-									<li data-menu=""><a class="dropdown-item" href="#"
+									<li data-menu=""><a class="dropdown-item" href="/Foto/billcontroller/getAllBills"
 										data-toggle="dropdown" data-i18n="All Bills"><i
 											class="feather icon-file-text"></i>All Bills</a></li>
 								</c:if>
@@ -168,7 +179,7 @@
 					<c:if test="${!empty user }">
 						<c:if test="${roleid == 1 }">
 							<li class="dropdown nav-item" data-menu="dropdown"><a
-								class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i
+								class="dropdown-toggle nav-link" href="" data-toggle="dropdown"><i
 									class="feather icon-user"></i><span data-i18n="Users">Users</span></a>
 								<ul class="dropdown-menu">
 									<li data-menu=""><a class="dropdown-item"
@@ -327,231 +338,6 @@
                                                         </div>
                                                     </div>
                                                 </form>
-                                            </div>
-                                            <div class="tab-pane fade" id="account-vertical-info" role="tabpanel" aria-labelledby="account-pill-info" aria-expanded="false">
-                                                <form novalidate>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="accountTextarea">Bio</label>
-                                                                <textarea class="form-control" id="accountTextarea" rows="3" placeholder="Your Bio data here..."></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <div class="controls">
-                                                                    <label for="account-birth-date">Birth date</label>
-                                                                    <input type="text" class="form-control birthdate-picker" required placeholder="Birth date" id="account-birth-date" data-validation-required-message="This birthdate field is required">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="accountSelect">Country</label>
-                                                                <select class="form-control" id="accountSelect">
-                                                                    <option>USA</option>
-                                                                    <option>India</option>
-                                                                    <option>Canada</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="languageselect2">Languages</label>
-                                                                <select class="form-control" id="languageselect2" multiple="multiple">
-                                                                    <option value="English" selected>English</option>
-                                                                    <option value="Spanish">Spanish</option>
-                                                                    <option value="French">French</option>
-                                                                    <option value="Russian">Russian</option>
-                                                                    <option value="German">German</option>
-                                                                    <option value="Arabic" selected>Arabic</option>
-                                                                    <option value="Sanskrit">Sanskrit</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <div class="controls">
-                                                                    <label for="account-phone">Phone</label>
-                                                                    <input type="text" class="form-control" id="account-phone" required placeholder="Phone number" value="(+656) 254 2568" data-validation-required-message="This phone number field is required">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="account-website">Website</label>
-                                                                <input type="text" class="form-control" id="account-website" placeholder="Website address">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="musicselect2">Favourite Music</label>
-                                                                <select class="form-control" id="musicselect2" multiple="multiple">
-                                                                    <option value="Rock">Rock</option>
-                                                                    <option value="Jazz" selected>Jazz</option>
-                                                                    <option value="Disco">Disco</option>
-                                                                    <option value="Pop">Pop</option>
-                                                                    <option value="Techno">Techno</option>
-                                                                    <option value="Folk" selected>Folk</option>
-                                                                    <option value="Hip hop">Hip hop</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="moviesselect2">Favourite movies</label>
-                                                                <select class="form-control" id="moviesselect2" multiple="multiple">
-                                                                    <option value="The Dark Knight" selected>The Dark Knight
-                                                                    </option>
-                                                                    <option value="Harry Potter" selected>Harry Potter</option>
-                                                                    <option value="Airplane!">Airplane!</option>
-                                                                    <option value="Perl Harbour">Perl Harbour</option>
-                                                                    <option value="Spider Man">Spider Man</option>
-                                                                    <option value="Iron Man" selected>Iron Man</option>
-                                                                    <option value="Avatar">Avatar</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-                                                            <button type="submit" class="btn btn-primary mr-sm-1 mb-1 mb-sm-0">Save
-                                                                changes</button>
-                                                            <button type="reset" class="btn btn-outline-warning">Cancel</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="tab-pane fade " id="account-vertical-social" role="tabpanel" aria-labelledby="account-pill-social" aria-expanded="false">
-                                                <form>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="account-twitter">Twitter</label>
-                                                                <input type="text" id="account-twitter" class="form-control" placeholder="Add link" value="https://www.twitter.com">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="account-facebook">Facebook</label>
-                                                                <input type="text" id="account-facebook" class="form-control" placeholder="Add link">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="account-google">Google+</label>
-                                                                <input type="text" id="account-google" class="form-control" placeholder="Add link">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="account-linkedin">LinkedIn</label>
-                                                                <input type="text" id="account-linkedin" class="form-control" placeholder="Add link" value="https://www.linkedin.com">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="account-instagram">Instagram</label>
-                                                                <input type="text" id="account-instagram" class="form-control" placeholder="Add link">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="account-quora">Quora</label>
-                                                                <input type="text" id="account-quora" class="form-control" placeholder="Add link">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-                                                            <button type="submit" class="btn btn-primary mr-sm-1 mb-1 mb-sm-0">Save
-                                                                changes</button>
-                                                            <button type="reset" class="btn btn-outline-warning">Cancel</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="tab-pane fade" id="account-vertical-connections" role="tabpanel" aria-labelledby="account-pill-connections" aria-expanded="false">
-                                                <div class="row">
-                                                    <div class="col-12 mb-3">
-                                                        <a href="javascript: void(0);" class="btn btn-info">Connect to
-                                                            <strong>Twitter</strong></a>
-                                                    </div>
-                                                    <div class="col-12 mb-3">
-                                                        <button class=" btn btn-sm btn-secondary float-right">edit</button>
-                                                        <h6>You are connected to facebook.</h6>
-                                                        <span>Johndoe@gmail.com</span>
-                                                    </div>
-                                                    <div class="col-12 mb-3">
-                                                        <a href="javascript: void(0);" class="btn btn-danger">Connect to
-                                                            <strong>Google</strong>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12 mb-2">
-                                                        <button class=" btn btn-sm btn-secondary float-right">edit</button>
-                                                        <h6>You are connected to Instagram.</h6>
-                                                        <span>Johndoe@gmail.com</span>
-                                                    </div>
-                                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-                                                        <button type="submit" class="btn btn-primary mr-sm-1 mb-1 mb-sm-0">Save
-                                                            changes</button>
-                                                        <button type="reset" class="btn btn-outline-warning">Cancel</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="account-vertical-notifications" role="tabpanel" aria-labelledby="account-pill-notifications" aria-expanded="false">
-                                                <div class="row">
-                                                    <h6 class="m-1">Activity</h6>
-                                                    <div class="col-12 mb-1">
-                                                        <div class="custom-control custom-switch custom-control-inline">
-                                                            <input type="checkbox" class="custom-control-input" checked id="accountSwitch1">
-                                                            <label class="custom-control-label mr-1" for="accountSwitch1"></label>
-                                                            <span class="switch-label w-100">Email me when someone comments
-                                                                onmy
-                                                                article</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 mb-1">
-                                                        <div class="custom-control custom-switch custom-control-inline">
-                                                            <input type="checkbox" class="custom-control-input" checked id="accountSwitch2">
-                                                            <label class="custom-control-label mr-1" for="accountSwitch2"></label>
-                                                            <span class="switch-label w-100">Email me when someone answers on
-                                                                my
-                                                                form</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 mb-1">
-                                                        <div class="custom-control custom-switch custom-control-inline">
-                                                            <input type="checkbox" class="custom-control-input" id="accountSwitch3">
-                                                            <label class="custom-control-label mr-1" for="accountSwitch3"></label>
-                                                            <span class="switch-label w-100">Email me hen someone follows
-                                                                me</span>
-                                                        </div>
-                                                    </div>
-                                                    <h6 class="m-1">Application</h6>
-                                                    <div class="col-12 mb-1">
-                                                        <div class="custom-control custom-switch custom-control-inline">
-                                                            <input type="checkbox" class="custom-control-input" checked id="accountSwitch4">
-                                                            <label class="custom-control-label mr-1" for="accountSwitch4"></label>
-                                                            <span class="switch-label w-100">News and announcements</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 mb-1">
-                                                        <div class="custom-control custom-switch custom-control-inline">
-                                                            <input type="checkbox" class="custom-control-input" id="accountSwitch5">
-                                                            <label class="custom-control-label mr-1" for="accountSwitch5"></label>
-                                                            <span class="switch-label w-100">Weekly product updates</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 mb-1">
-                                                        <div class="custom-control custom-switch custom-control-inline">
-                                                            <input type="checkbox" class="custom-control-input" checked id="accountSwitch6">
-                                                            <label class="custom-control-label mr-1" for="accountSwitch6"></label>
-                                                            <span class="switch-label w-100">Weekly blog digest</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-                                                        <button type="submit" class="btn btn-primary mr-sm-1 mb-1 mb-sm-0">Save
-                                                            changes</button>
-                                                        <button type="reset" class="btn btn-outline-warning">Cancel</button>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>

@@ -1,0 +1,13 @@
+package com.example.demo.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import model.Photo;
+
+public interface PhotoRepository extends JpaRepository<Photo, Integer>{
+	
+	@Query("SELECT p FROM Photo p WHERE p.Orders_OrderId = ?1")
+	Photo findByOrderId(int orderId);
+
+}

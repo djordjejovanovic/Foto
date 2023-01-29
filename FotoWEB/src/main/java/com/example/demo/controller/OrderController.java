@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import java.io.File;
 import java.nio.file.Files;
+import java.util.ArrayList;
 import java.util.Date;
 
 import java.util.List;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.example.demo.OrderWithPhoto;
 import com.example.demo.repository.BillsRepository;
 import com.example.demo.repository.OrderRepository;
 import com.example.demo.repository.PhotoRepository;
@@ -43,21 +45,36 @@ public class OrderController {
 	@Autowired
 	BillsRepository billrepo;
 	
-	public List<Order> getOrders(User user) {
-		System.out.println("1");
+	public List<OrderWithPhoto> getOrders(User user) {
+		
 		List<Order> orders = null;
 		
-//		if(user.getRole().getRoleId() == 1) {
-//			System.out.println("2");
-//			orders = or.findAll();
-//		}
-//		else {
-//			System.out.println("3");
-//			orders = or.findAllByUserId(user.getUserId());
-//		}
+		if(user.getRole().getRoleId() == 1) {
+			orders = or.findAll();
+		}
+		else {
+			orders = or.findAllByUserId(user.getUserId());
+		}
 		
-		orders = or.findAllByUserId(user.getUserId());
-		return orders;
+		List<OrderWithPhoto> owpl = new ArrayList<OrderWithPhoto>();
+		if(orders != null && orders.size() > 0) {
+			for (Order o : orders) {
+				OrderWithPhoto owp = new OrderWithPhoto();
+				owp.setOrderId(o.getOrderId());
+				owp.setUserId(o.userId());
+				owp.setDone(o.getDone());
+				owp.setCreationDate(o.getCreationDate());
+				owp.setName(o.getName());
+				
+//				Photo photo = photorepo.findByOrderId(o.getOrderId());
+//				
+//				owp.setPhotoName(photo.getName());
+				
+				owpl.add(owp);
+			}
+		}
+		
+		return owpl;
 	}
 	
 	@RequestMapping(value = "createOrder", method = RequestMethod.POST)
@@ -94,7 +111,8 @@ public class OrderController {
 		String filePath;
 		try {
 			filePath = System.getProperty("user.dir");
-			filePath += "/photos";
+			filePath += "/src/main/webapp/photos";
+			System.out.println(filePath);
 			File imageFile = new File(filePath, photoName);
 
 			slika.transferTo(imageFile);
@@ -119,43 +137,84 @@ public class OrderController {
 		bill.setOrder(order);
 		bill = billrepo.save(bill);
 		
-		List<Order> orders = getOrders(user);
+		List<OrderWithPhoto> orders = getOrders(user);
 		if(orders != null && !orders.isEmpty()) {
 			request.getSession().setAttribute("orders", orders);
 			m.addAttribute("orders", orders);
 		}
 	
-		return "orders/orders";
+		return "orders/myOrders";
 	}
 	
 	@RequestMapping(value = "myOrders", method = RequestMethod.GET)
 	public String myOrders(HttpServletRequest request, Model m) {
 		
 		User user = (User) request.getSession().getAttribute("user");
-
-		List<Order> orders = getOrders(user);
 		
-		if(orders != null && !orders.isEmpty()) {
-			request.getSession().setAttribute("orders", orders);
-			m.addAttribute("orders", orders);
+		List<Order> orders = or.findAllByUserId(user.getUserId());
+		
+		List<OrderWithPhoto> owpl = new ArrayList<OrderWithPhoto>();
+		if(orders != null && orders.size() > 0) {
+			for (Order o : orders) {
+				OrderWithPhoto owp = new OrderWithPhoto();
+				owp.setOrderId(o.getOrderId());
+				owp.setUserId(o.userId());
+				owp.setDone(o.getDone());
+				owp.setCreationDate(o.getCreationDate());
+				owp.setName(o.getName());
+				
+				List<Photo> photo = o.getPhotos();
+				if(photo != null && photo.size() == 1) {
+					for (Photo p : photo) {
+						owp.setPhotoName(p.getName());
+					}
+				}
+				owpl.add(owp);
+			}
+		}
+		
+		if(owpl != null && !owpl.isEmpty()) {
+			request.getSession().setAttribute("orders", owpl);
+			m.addAttribute("orders", owpl);
 		}
 	
-		return "orders/orders";
+		return "orders/myOrders";
 	}
 	
 	@RequestMapping(value = "allOrders")
 	public String allOrders(HttpServletRequest request, Model m) {
 		
 		User user = (User) request.getSession().getAttribute("user");
-
-		List<Order> orders = getOrders(user);
 		
-		if(orders != null && !orders.isEmpty()) {
-			request.getSession().setAttribute("orders", orders);
-			m.addAttribute("orders", orders);
+		List<Order> orders = or.findAll();
+		
+		List<OrderWithPhoto> owpl = new ArrayList<OrderWithPhoto>();
+		if(orders != null && orders.size() > 0) {
+			for (Order o : orders) {
+				OrderWithPhoto owp = new OrderWithPhoto();
+				owp.setOrderId(o.getOrderId());
+				owp.setUserId(o.userId());
+				owp.setDone(o.getDone());
+				owp.setCreationDate(o.getCreationDate());
+				owp.setName(o.getName());
+				
+				List<Photo> photo = o.getPhotos();
+				if(photo != null && photo.size() == 1) {
+					for (Photo p : photo) {
+						owp.setPhotoName(p.getName());
+					}
+				}
+				
+				owpl.add(owp);
+			}
+		}
+		
+		if(owpl != null && !owpl.isEmpty()) {
+			request.getSession().setAttribute("orders", owpl);
+			m.addAttribute("orders", owpl);
 		}
 	
-		return "orders/orders";
+		return "orders/allOrders";
 	}
 	
 	@RequestMapping(value = "prepareCreateOrder")

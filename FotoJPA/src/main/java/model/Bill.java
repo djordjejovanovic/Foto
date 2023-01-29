@@ -20,7 +20,8 @@ public class Bill implements Serializable {
 
 	private float price;
 
-	private int users_UserId;
+	@Column(name="Users_UserId")
+	private int userId;
 
 	//bi-directional many-to-one association to Order
 	@ManyToOne
@@ -47,11 +48,11 @@ public class Bill implements Serializable {
 	}
 
 	public int getUsers_UserId() {
-		return this.users_UserId;
+		return this.userId;
 	}
 
 	public void setUsers_UserId(int users_UserId) {
-		this.users_UserId = users_UserId;
+		this.userId = users_UserId;
 	}
 
 	public Order getOrder() {

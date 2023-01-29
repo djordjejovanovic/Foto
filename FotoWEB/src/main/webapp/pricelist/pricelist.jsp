@@ -83,18 +83,19 @@
 						class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
 						<ul class="nav navbar-nav">
 							<li class="nav-item mobile-menu d-xl-none mr-auto"><a
-								class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+								class="nav-link nav-menu-main menu-toggle hidden-xs" href=""><i
 									class="ficon feather icon-menu"></i></a></li>
 						</ul>
 					</div>
 					<ul class="nav navbar-nav float-right">
 						<li class="nav-item d-none d-lg-block"><a
 							class="nav-link nav-link-expand"><i
-								class="ficon feather icon-maximize"></i></a></li>
+							class="ficon feather icon-maximize"></i></a>
+						</li>
 						<c:choose>
 							<c:when test="${!empty user}">
 								<li class="dropdown dropdown-user nav-item"><a
-									class="dropdown-toggle nav-link dropdown-user-link" href="#"
+									class="dropdown-toggle nav-link dropdown-user-link" href=""
 									data-toggle="dropdown">
 										<div class="user-nav d-sm-flex d-none">
 											<span class="user-name text-bold-600">${user.username }</span>
@@ -104,8 +105,7 @@
 											alt="avatar" height="40" width="40"></span>
 								</a>
 									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item"
-											href="/Foto/login/account_settings.jsp"> <i
+										<a class="dropdown-item" href="/Foto/login/account_settings.jsp"> <i
 											class="feather icon-user"></i> Edit Profile
 										</a>
 										<div class="dropdown-divider"></div>
@@ -134,9 +134,9 @@
 			<div class="navbar-header">
 				<ul class="nav navbar-nav flex-row">
 					<li class="nav-item mr-auto"><a class="navbar-brand"
-						href="../css/html/ltr/horizontal-menu-template-dark/index.html">
+						href="/">
 							<div class="brand-logo"></div>
-							<h2 class="brand-text mb-0">Vuexy</h2>
+							<h2 class="brand-text mb-0">FotoProj</h2>
 					</a></li>
 					<li class="nav-item nav-toggle"><a
 						class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i
@@ -154,7 +154,7 @@
 
 					<c:if test="${!empty user }">
 						<li class="dropdown nav-item" data-menu="dropdown"><a
-							class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i
+							class="dropdown-toggle nav-link" href="" data-toggle="dropdown"><i
 								class="feather icon-shopping-cart"></i><span data-i18n="Orders">Orders</span></a>
 							<ul class="dropdown-menu">
 								<li data-menu=""><a class="dropdown-item" href="/Foto/ordercontroller/prepareCreateOrder"
@@ -172,7 +172,7 @@
 					</c:if>
 
 					<li class="dropdown nav-item" data-menu="dropdown"><a
-						class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i
+						class="dropdown-toggle nav-link" href="" data-toggle="dropdown"><i
 							class="feather icon-list"></i><span data-i18n="Pricelist">Pricelist</span></a>
 						<ul class="dropdown-menu">
 							<li data-menu=""><a class="dropdown-item" href="/Foto/pricelistcontroller/getPricelist"
@@ -182,14 +182,14 @@
 
 					<c:if test="${!empty user }">
 						<li class="dropdown nav-item" data-menu="dropdown"><a
-							class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i
+							class="dropdown-toggle nav-link" href="" data-toggle="dropdown"><i
 								class="feather icon-file-text"></i><span data-i18n="Bills">Bills</span></a>
 							<ul class="dropdown-menu">
-								<li data-menu=""><a class="dropdown-item" href="#"
+								<li data-menu=""><a class="dropdown-item" href="/Foto/billcontroller/getMyBills"
 									data-toggle="dropdown" data-i18n="My Bills"><i
 										class="feather icon-file-text"></i>My Bills</a></li>
 								<c:if test="${roleid == 1 }">
-									<li data-menu=""><a class="dropdown-item" href="#"
+									<li data-menu=""><a class="dropdown-item" href="/Foto/billcontroller/getAllBills"
 										data-toggle="dropdown" data-i18n="All Bills"><i
 											class="feather icon-file-text"></i>All Bills</a></li>
 								</c:if>
@@ -199,7 +199,7 @@
 					<c:if test="${!empty user }">
 						<c:if test="${roleid == 1 }">
 							<li class="dropdown nav-item" data-menu="dropdown"><a
-								class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i
+								class="dropdown-toggle nav-link" href="" data-toggle="dropdown"><i
 									class="feather icon-user"></i><span data-i18n="Users">Users</span></a>
 								<ul class="dropdown-menu">
 									<li data-menu=""><a class="dropdown-item"
@@ -248,7 +248,7 @@
 									<p class="card-text"></p>
 									<!-- Table with outer spacing -->
 									<div class="table-responsive">
-										<table class="table">
+										<table class="table table-striped mb-0">
 											<thead>
 												<tr>
 													<th>ID</th>
