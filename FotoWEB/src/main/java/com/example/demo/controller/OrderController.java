@@ -24,7 +24,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.OrderReportModel;
 import com.example.demo.OrderStatisticModel;
-import com.example.demo.OrderWithPhoto;
+import com.example.demo.OrderWithPhotoModel;
 import com.example.demo.repository.BillsRepository;
 import com.example.demo.repository.OrderRepository;
 import com.example.demo.repository.PhotoRepository;
@@ -65,7 +65,7 @@ public class OrderController {
 	@Autowired
 	PhotoController photoController;
 	
-	public List<OrderWithPhoto> getOrders(User user) {
+	public List<OrderWithPhotoModel> getOrders(User user) {
 		
 		List<Order> orders = null;
 		
@@ -76,10 +76,10 @@ public class OrderController {
 			orders = or.findAllByUserId(user.getUserId());
 		}
 		
-		List<OrderWithPhoto> owpl = new ArrayList<OrderWithPhoto>();
+		List<OrderWithPhotoModel> owpl = new ArrayList<OrderWithPhotoModel>();
 		if(orders != null && orders.size() > 0) {
 			for (Order o : orders) {
-				OrderWithPhoto owp = new OrderWithPhoto();
+				OrderWithPhotoModel owp = new OrderWithPhotoModel();
 				owp.setOrderId(o.getOrderId());
 				owp.setUserId(o.userId());
 				owp.setDone(o.getDone());
@@ -161,10 +161,10 @@ public class OrderController {
 		
 		List<Order> orders = or.findAllByUserId(user.getUserId());
 		
-		List<OrderWithPhoto> owpl = new ArrayList<OrderWithPhoto>();
+		List<OrderWithPhotoModel> owpl = new ArrayList<OrderWithPhotoModel>();
 		if(orders != null && orders.size() > 0) {
 			for (Order o : orders) {
-				OrderWithPhoto owp = new OrderWithPhoto();
+				OrderWithPhotoModel owp = new OrderWithPhotoModel();
 				owp.setOrderId(o.getOrderId());
 				owp.setUserId(o.userId());
 				owp.setDone(o.getDone());
@@ -193,10 +193,10 @@ public class OrderController {
 		
 		List<Order> orders = or.findAll();
 		
-		List<OrderWithPhoto> owpl = new ArrayList<OrderWithPhoto>();
+		List<OrderWithPhotoModel> owpl = new ArrayList<OrderWithPhotoModel>();
 		if(orders != null && orders.size() > 0) {
 			for (Order o : orders) {
-				OrderWithPhoto owp = new OrderWithPhoto();
+				OrderWithPhotoModel owp = new OrderWithPhotoModel();
 				owp.setOrderId(o.getOrderId());
 				owp.setUserId(o.userId());
 				owp.setDone(o.getDone());

@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="My"/>
 			<item value="other"/>
 			<item value="min"/>
 			<item value="touchspin-min-max"/>
@@ -22,7 +23,6 @@
 			<item value="app-assets/data/locales"/>
 			<item value="app-assets/data/locales/en.json"/>
 			<item value="Validation Example"/>
-			<item value="../../../"/>
 		</list>
 		<list key="replacehistory">
 			<item value="href=&quot;&quot;"/>

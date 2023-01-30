@@ -11,7 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.example.demo.BillWithUser;
+import com.example.demo.BillWithUserModel;
 import com.example.demo.repository.BillsRepository;
 import com.example.demo.repository.UserRepository;
 
@@ -35,11 +35,11 @@ public class BillController {
 		
 		List<Bill> bills = br.findAllByUserId(user.getUserId());
 		
-		List<BillWithUser> bwul = new ArrayList<BillWithUser>();
+		List<BillWithUserModel> bwul = new ArrayList<BillWithUserModel>();
 		for (Bill b : bills) {
 			User u = ur.findById(b.getUsers_UserId());
 			
-			BillWithUser bwu = new BillWithUser();
+			BillWithUserModel bwu = new BillWithUserModel();
 			bwu.setBillId(b.getBillId());
 			bwu.setOrderId(b.getOrder().getOrderId());
 			bwu.setPrice((int) b.getPrice());
@@ -60,11 +60,11 @@ public class BillController {
 		
 		List<Bill> bills = br.findAll();
 		
-		List<BillWithUser> bwul = new ArrayList<BillWithUser>();
+		List<BillWithUserModel> bwul = new ArrayList<BillWithUserModel>();
 		for (Bill b : bills) {
 			User u = ur.findById(b.getUsers_UserId());
 			
-			BillWithUser bwu = new BillWithUser();
+			BillWithUserModel bwu = new BillWithUserModel();
 			bwu.setBillId(b.getBillId());
 			bwu.setOrderId(b.getOrder().getOrderId());
 			bwu.setPrice((int) b.getPrice());

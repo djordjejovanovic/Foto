@@ -16,7 +16,7 @@
 <meta name="keywords"
 	content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
 <meta name="author" content="PIXINVENT">
-<title>FotoProj - Login</title>
+<title>Login</title>
 <link rel="apple-touch-icon"
 	href="../css/app-assets/images/ico/apple-icon-120.png">
 <link rel="shortcut icon" type="image/x-icon"
@@ -133,7 +133,7 @@
 										</div>
 										<div class="login-footer">
 											<div class="divider">
-												<div class="divider-text">FotoProj</div>
+												<div class="divider-text"><a href="/Foto">FotoProj</a></div>
 											</div>
 										</div>
 									</div>
