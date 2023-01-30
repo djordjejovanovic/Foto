@@ -250,7 +250,6 @@
 											<thead>
 												<tr>
 													<th>BILL ID</th>
-													<th>USERNAME</th>
 													<th>PRICE</th>
 													<th>ORDER ID</th>
 												</tr>
@@ -259,7 +258,6 @@
 											<c:forEach items="${bills }" var="b">
 												<tr>
 													<th scope="row">${b.billId }</th>
-													<td>${b.username }</td>
 													<td>${b.price } RSD</td>
 													<td>${b.orderId }</td>
 												</tr>
@@ -280,24 +278,6 @@
 
 	<div class="sidenav-overlay"></div>
 	<div class="drag-target"></div>
-
-	<!-- BEGIN: Footer-->
-	<footer class="footer footer-static footer-dark navbar-shadow">
-		<p class="clearfix blue-grey lighten-2 mb-0">
-			<span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT
-				&copy; 2020<a class="text-bold-800 grey darken-2"
-				href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent,</a>All
-				rights Reserved
-			</span><span class="float-md-right d-none d-md-block">Hand-crafted &
-				Made with<i class="feather icon-heart pink"></i>
-			</span>
-			<button class="btn btn-primary btn-icon scroll-top" type="button">
-				<i class="feather icon-arrow-up"></i>
-			</button>
-		</p>
-	</footer>
-	<!-- END: Footer-->
-
 
 	<!-- BEGIN: Vendor JS-->
 	<script src="../css/app-assets/vendors/js/vendors.min.js"></script>

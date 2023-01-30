@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.OrderReportModel;
+import com.example.demo.OrderStatisticModel;
 import com.example.demo.OrderWithPhoto;
 import com.example.demo.repository.BillsRepository;
 import com.example.demo.repository.OrderRepository;
@@ -81,10 +82,6 @@ public class OrderController {
 				owp.setDone(o.getDone());
 				owp.setCreationDate(o.getCreationDate());
 				owp.setName(o.getName());
-				
-//				Photo photo = photorepo.findByOrderId(o.getOrderId());
-//				
-//				owp.setPhotoName(photo.getName());
 				
 				owpl.add(owp);
 			}
@@ -245,10 +242,16 @@ public class OrderController {
 		return "orders/createorder";
 	}
 	
-	public List<OrderReportModel> createReportModel(User user) {
+	public List<OrderReportModel> createReportModel(User user, int type) {
 		List<OrderReportModel> reportModelList = new ArrayList<OrderReportModel>();
 		
-		List<Order> ordersList = or.findAllByUserId(user.getUserId());
+		List<Order> ordersList = null;
+		if(type == 0) {
+			ordersList = or.findAllByUserId(user.getUserId());
+		}
+		else {
+			ordersList = or.findAll();
+		}
 		
 		for (Order order : ordersList) {
 			OrderReportModel orm = new OrderReportModel();
@@ -273,12 +276,12 @@ public class OrderController {
 		return reportModelList;
 	}
 	
-	@RequestMapping(value="myOrdersReport", method=RequestMethod.GET)
-	public void myOrdersReport(HttpServletResponse response, HttpServletRequest request) throws Exception{
+	@RequestMapping(value="reportOrder", method=RequestMethod.POST)
+	public void reportOrder(HttpServletResponse response, HttpServletRequest request, int type) throws Exception{
 		
 		User user = (User) request.getSession().getAttribute("user");
 		
-		JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(createReportModel(user));
+		JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(createReportModel(user, type));
 		InputStream inputStream = this.getClass().getResourceAsStream("/jasperreports/MyOrdersReport.jrxml");
 		JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
 		Map<String, Object> params = new HashMap<String, Object>();
@@ -290,6 +293,33 @@ public class OrderController {
 		response.addHeader("Content-disposition", "attachment; filename=OrderReports.pdf");
 		OutputStream out = response.getOutputStream();
 		JasperExportManager.exportReportToPdfStream(jasperPrint,out);
+	}
+	
+	public OrderStatisticModel getOrderStatistic(int userId) {
+		
+		List<Order> ordersList = or.findAllByUserId(userId);
+		
+		OrderStatisticModel osm = new OrderStatisticModel(0, 0, 0);
+		
+		if(ordersList != null && ordersList.size() > 0) {
+			int doneNumber = 0;
+			int inProgressNumber = 0;
+			
+			for (Order order : ordersList) {
+				if(order.getDone())
+					doneNumber++;
+				else
+					inProgressNumber++;
+			}
+			
+			float statPerc = doneNumber * 100 / ordersList.size();
+			
+			osm.setDoneNumber(doneNumber);
+			osm.setInProgressNumber(inProgressNumber);
+			osm.setStatisticPercentage(statPerc);
+		}
+		
+		return osm;
 	}
 
 }

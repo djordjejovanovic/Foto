@@ -231,6 +231,13 @@
 									<li class="breadcrumb-item"><a href="/Foto">Home</a></li>
 									<li class="breadcrumb-item"><a href="">Orders</a></li>
 									<li class="breadcrumb-item active">My Orders</li>
+									<li>
+									 	<form action="/Foto/ordercontroller/reportOrder", method="post">
+									 		<input type="hidden" name="type" value="1" />
+										 	<button type="submit" class="btn btn-primary"
+											style="margin-top: 10px; margin-left: 10px">Report</button>
+										</form>
+									</li>
 								</ol>
 							</div>
 						</div>
@@ -307,24 +314,6 @@
 
 	<div class="sidenav-overlay"></div>
 	<div class="drag-target"></div>
-
-	<!-- BEGIN: Footer-->
-	<footer class="footer footer-static footer-dark navbar-shadow">
-		<p class="clearfix blue-grey lighten-2 mb-0">
-			<span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT
-				&copy; 2020<a class="text-bold-800 grey darken-2"
-				href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent,</a>All
-				rights Reserved
-			</span><span class="float-md-right d-none d-md-block">Hand-crafted &
-				Made with<i class="feather icon-heart pink"></i>
-			</span>
-			<button class="btn btn-primary btn-icon scroll-top" type="button">
-				<i class="feather icon-arrow-up"></i>
-			</button>
-		</p>
-	</footer>
-	<!-- END: Footer-->
-
 
 	<!-- BEGIN: Vendor JS-->
 	<script src="../css/app-assets/vendors/js/vendors.min.js"></script>

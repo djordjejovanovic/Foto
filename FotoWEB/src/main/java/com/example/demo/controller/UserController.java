@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.example.demo.AESEncryptionDecryption;
+import com.example.demo.OrderStatisticModel;
 import com.example.demo.repository.UserRepository;
 
 import model.Role;
@@ -28,6 +29,9 @@ public class UserController {
 
 	@Autowired
 	UserRepository ur;
+	
+	@Autowired
+	OrderController orderController;
 	
 	@RequestMapping(value = "register", method = RequestMethod.POST)
 	public String register(String email, String firstname, String lastname, String username, String password, String repassword, HttpServletRequest request,
@@ -110,6 +114,9 @@ public class UserController {
 			request.getSession().setAttribute("roleid", user.getRole().getRoleId());
 			
 			m.addAttribute("user", user);
+			
+			OrderStatisticModel osm = orderController.getOrderStatistic(user.getUserId());
+			request.getSession().setAttribute("orderStatPerc", osm);
 			
 			return "redirect:/";
 
@@ -201,5 +208,5 @@ public class UserController {
 		
 		return "redirect:/";
 	}
-
+	
 }

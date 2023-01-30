@@ -15,6 +15,8 @@ public class OrderWithPhoto {
 	private String name;
 	
 	private String photoName;
+	
+	private int price;
 
 	public OrderWithPhoto() {
 	}
@@ -65,6 +67,14 @@ public class OrderWithPhoto {
 
 	public void setPhotoName(String photoName) {
 		this.photoName = photoName;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
 	}
 	
 }

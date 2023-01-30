@@ -1,0 +1,10 @@
+package com.example.demo;
+
+public class OrderStatisticModel {
+
+	private int doneNumber;
+	
+	private int inProgressNumber;
+	
+	private float statisticPercentage;
+}
