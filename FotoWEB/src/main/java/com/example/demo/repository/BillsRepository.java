@@ -11,4 +11,5 @@ public interface BillsRepository extends JpaRepository<Bill, Integer>{
 
 	List<Bill> findAllByUserId(int userId);
 	Bill findByOrder(Order o);
+	void deleteAllByUserId(int userId);
 }

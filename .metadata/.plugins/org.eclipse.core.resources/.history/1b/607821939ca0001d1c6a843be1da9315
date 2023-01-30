@@ -1,0 +1,88 @@
+package com.example.demo.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.example.demo.BillWithUser;
+import com.example.demo.repository.BillsRepository;
+import com.example.demo.repository.UserRepository;
+
+import model.Bill;
+import model.User;
+
+@Controller
+@RequestMapping(value = "billcontroller")
+public class BillController {
+
+	@Autowired
+	BillsRepository br;
+	
+	@Autowired
+	UserRepository ur;
+	
+	@RequestMapping(value = "getMyBills", method = RequestMethod.GET)
+	public String getMyBills(HttpServletRequest request, Model m) {
+		
+		User user = (User) request.getSession().getAttribute("user");
+		
+		List<Bill> bills = br.findAllByUserId(user.getUserId());
+		
+		List<BillWithUser> bwul = new ArrayList<BillWithUser>();
+		for (Bill b : bills) {
+			User u = ur.findById(b.getUsers_UserId());
+			
+			BillWithUser bwu = new BillWithUser();
+			bwu.setBillId(b.getBillId());
+			bwu.setOrderId(b.getOrder().getOrderId());
+			bwu.setPrice((int) b.getPrice());
+			bwu.setUsername(u.getUsername());
+			
+			bwul.add(bwu);
+		}
+		
+		if(bwul != null && !bwul.isEmpty()) {
+			request.getSession().setAttribute("bills", bwul);
+			m.addAttribute("bills", bwul);
+		}
+	
+		return "bills/myBills";
+	}
+	
+	@RequestMapping(value = "getAllBills", method = RequestMethod.GET)
+	public String getAllBills(HttpServletRequest request, Model m) {
+		
+		List<Bill> bills = br.findAll();
+		
+		List<BillWithUser> bwul = new ArrayList<BillWithUser>();
+		for (Bill b : bills) {
+			User u = ur.findById(b.getUsers_UserId());
+			
+			BillWithUser bwu = new BillWithUser();
+			bwu.setBillId(b.getBillId());
+			bwu.setOrderId(b.getOrder().getOrderId());
+			bwu.setPrice((int) b.getPrice());
+			bwu.setUsername(u.getUsername());
+			
+			bwul.add(bwu);
+		}
+		
+		if(bwul != null && !bwul.isEmpty()) {
+			request.getSession().setAttribute("bills", bwul);
+			m.addAttribute("bills", bwul);
+		}
+	
+		return "bills/allBills";
+	}
+	
+	public void deleteBillForUser(User user) {
+		br.deleteAllByUser(user);
+	}
+}

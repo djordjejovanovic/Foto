@@ -49,8 +49,7 @@ public class BillController {
 		}
 		
 		if(bwul != null && !bwul.isEmpty()) {
-			request.getSession().setAttribute("bills", bwul);
-			m.addAttribute("bills", bwul);
+			request.setAttribute("bills", bwul);
 		}
 	
 		return "bills/myBills";
@@ -75,10 +74,18 @@ public class BillController {
 		}
 		
 		if(bwul != null && !bwul.isEmpty()) {
-			request.getSession().setAttribute("bills", bwul);
-			m.addAttribute("bills", bwul);
+			request.setAttribute("bills", bwul);
 		}
 	
 		return "bills/allBills";
+	}
+	
+	public void deleteBillForUser(int userId) {
+		List<Bill> bills = br.findAllByUserId(userId);
+		
+		for (Bill bill : bills) {
+			br.delete(bill);
+		}
+		
 	}
 }

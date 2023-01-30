@@ -16,8 +16,7 @@
 <meta name="keywords"
 	content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
 <meta name="author" content="PIXINVENT">
-<title>Dashboard analytics - Vuexy - Bootstrap HTML admin
-	template</title>
+<title>FotoProj</title>
 <link rel="apple-touch-icon"
 	href="css/app-assets/images/ico/apple-icon-120.png">
 <link rel="shortcut icon" type="image/x-icon"
@@ -121,7 +120,7 @@
 											alt="avatar" height="40" width="40"></span>
 								</a>
 									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="/Foto/login/account_settings.jsp"> <i
+										<a class="dropdown-item" href="/Foto/users/account_settings.jsp"> <i
 											class="feather icon-user"></i> Edit Profile
 										</a>
 										<div class="dropdown-divider"></div>
@@ -131,7 +130,7 @@
 							</c:when>
 							<c:otherwise>
 								<li><a href="/Foto/login/login.jsp" class="btn btn-primary"
-									style="margin-top: 10px; margin-left: 10px">Login</a></li>
+									style="margin-top: 10px; margin-left: 15px; margin-right: 15px">Login</a></li>
 							</c:otherwise>
 						</c:choose>
 					</ul>

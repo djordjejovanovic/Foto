@@ -16,7 +16,7 @@
 <meta name="keywords"
 	content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
 <meta name="author" content="PIXINVENT">
-<title>My Orders</title>
+<title>FotoProj - All Orders</title>
 <link rel="apple-touch-icon"
 	href="../css/app-assets/images/ico/apple-icon-120.png">
 <link rel="shortcut icon" type="image/x-icon"
@@ -105,7 +105,7 @@
 								</a>
 									<div class="dropdown-menu dropdown-menu-right">
 										<a class="dropdown-item"
-											href="/Foto/login/account_settings.jsp"> <i
+											href="/Foto/users/account_settings.jsp"> <i
 											class="feather icon-user"></i> Edit Profile
 										</a>
 										<div class="dropdown-divider"></div>
@@ -231,13 +231,6 @@
 									<li class="breadcrumb-item"><a href="/Foto">Home</a></li>
 									<li class="breadcrumb-item"><a href="">Orders</a></li>
 									<li class="breadcrumb-item active">My Orders</li>
-									<li>
-									 	<form action="/Foto/ordercontroller/reportOrder", method="post">
-									 		<input type="hidden" name="type" value="1" />
-										 	<button type="submit" class="btn btn-primary"
-											style="margin-top: 10px; margin-left: 10px">Report</button>
-										</form>
-									</li>
 								</ol>
 							</div>
 						</div>
@@ -253,6 +246,13 @@
 								<c:if test="${!empty saveOrderSucc }">
 									<p style="color: green;">${saveOrderSucc }</p>
 								</c:if>
+								<div style="margin-left: 90%;">
+									<form action="/Foto/ordercontroller/reportOrder", method="post">
+										<input type="hidden" name="type" value="1" />
+										<button type="submit" class="btn btn-primary"
+											style="margin-top: 10px; margin-left: 10px">Report</button>
+									</form>
+								</div>
 							</div>
 							<div class="card-content">
 								<div class="card-body">

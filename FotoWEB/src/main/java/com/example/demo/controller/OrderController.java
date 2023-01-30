@@ -62,6 +62,9 @@ public class OrderController {
 	@Autowired
 	UserRepository ur;
 	
+	@Autowired
+	PhotoController photoController;
+	
 	public List<OrderWithPhoto> getOrders(User user) {
 		
 		List<Order> orders = null;
@@ -94,7 +97,7 @@ public class OrderController {
 	public String createOrder(String ordername, String format, int quantity, @RequestParam MultipartFile slika, HttpServletRequest request, Model m) {
 		
 		if (slika == null) {
-			request.setAttribute("photoFaild", "Failure.");
+			m.addAttribute("photoFaild", "Failure.");
 			return "orders/createorder";
 		}
 		
@@ -125,7 +128,6 @@ public class OrderController {
 		try {
 			filePath = System.getProperty("user.dir");
 			filePath += "/src/main/webapp/photos";
-			System.out.println(filePath);
 			File imageFile = new File(filePath, photoName);
 
 			slika.transferTo(imageFile);
@@ -136,13 +138,10 @@ public class OrderController {
 		} catch (Exception e) {
 			e.printStackTrace();
 			or.deleteById(order.getOrderId());
-			request.setAttribute("photoFaild", "Failure.");
-			System.out.println("exception");
+			m.addAttribute("photoFaild", "Failure.");
 			return "orders/createorder";
 		}
-		
-		request.setAttribute("saveOrderSucc", "Successfuly ordered photo.");
-		
+				
 		Bill bill = new Bill();
 		int price = quantity * pl.getPricePerPiece();
 		bill.setPrice(price);
@@ -150,13 +149,9 @@ public class OrderController {
 		bill.setOrder(order);
 		bill = billrepo.save(bill);
 		
-		List<OrderWithPhoto> orders = getOrders(user);
-		if(orders != null && !orders.isEmpty()) {
-			request.getSession().setAttribute("orders", orders);
-			m.addAttribute("orders", orders);
-		}
+		request.setAttribute("saveOrderSucc", "Order creadet succesfuly.");
 	
-		return "orders/myOrders";
+		return "redirect:/ordercontroller/myOrders";
 	}
 	
 	@RequestMapping(value = "myOrders", method = RequestMethod.GET)
@@ -187,8 +182,7 @@ public class OrderController {
 		}
 		
 		if(owpl != null && !owpl.isEmpty()) {
-			request.getSession().setAttribute("orders", owpl);
-			m.addAttribute("orders", owpl);
+			request.setAttribute("orders", owpl);
 		}
 	
 		return "orders/myOrders";
@@ -221,8 +215,7 @@ public class OrderController {
 		}
 		
 		if(owpl != null && !owpl.isEmpty()) {
-			request.getSession().setAttribute("orders", owpl);
-			m.addAttribute("orders", owpl);
+			request.setAttribute("orders", owpl);
 		}
 	
 		return "orders/allOrders";
@@ -235,8 +228,7 @@ public class OrderController {
 		pricelist = pr.findAll();
 		
 		if(pricelist != null && !pricelist.isEmpty()) {
-			request.getSession().setAttribute("pricelist", pricelist);
-			m.addAttribute("pricelist", pricelist);
+			request.setAttribute("pricelist", pricelist);
 		}
 		
 		return "orders/createorder";
@@ -288,7 +280,6 @@ public class OrderController {
 		JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, params, dataSource);
 		inputStream.close();
 		
-		
 		response.setContentType("application/x-download");
 		response.addHeader("Content-disposition", "attachment; filename=OrderReports.pdf");
 		OutputStream out = response.getOutputStream();
@@ -320,6 +311,15 @@ public class OrderController {
 		}
 		
 		return osm;
+	}
+	
+	public void deleteOrderForUser(int userId) {
+		List<Order> orderList = or.findAllByUserId(userId);
+		
+		for (Order order : orderList) {
+			photoController.deletePhotoByOrder(order);
+			or.delete(order);
+		}
 	}
 
 }

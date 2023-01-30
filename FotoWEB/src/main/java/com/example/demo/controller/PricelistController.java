@@ -27,9 +27,7 @@ public class PricelistController {
 		pl = pr.findAll();
 		
 		if(pl != null) {
-			request.getSession().setAttribute("pricelist", pl);
 			request.setAttribute("pricelist", pl);
-			m.addAttribute("pricelist", pl);
 			
 			return "pricelist/pricelist";
 		}

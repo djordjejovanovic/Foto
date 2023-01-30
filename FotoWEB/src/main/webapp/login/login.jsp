@@ -16,7 +16,7 @@
 <meta name="keywords"
 	content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
 <meta name="author" content="PIXINVENT">
-<title>Login Page - Vuexy - Bootstrap HTML admin template</title>
+<title>FotoProj - Login</title>
 <link rel="apple-touch-icon"
 	href="../css/app-assets/images/ico/apple-icon-120.png">
 <link rel="shortcut icon" type="image/x-icon"
@@ -92,10 +92,10 @@
 										</div>
 										<c:choose>
 											<c:when test="${!empty porukaLog }">
-												<p style="color: red;">${porukaLog }</p>
+												<p class="text-danger">${porukaLog }</p>
 											</c:when>
 											<c:when test="${!empty porukaLogSucc }">
-												<p style="color: green;">${porukaLogSucc }</p>
+												<p class="text-success">${porukaLogSucc }</p>
 											</c:when>
 											<c:otherwise>
 												<p class="px-2">Welcome back, please login to your

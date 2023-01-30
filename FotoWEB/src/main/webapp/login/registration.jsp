@@ -13,7 +13,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Register Page - Vuexy - Bootstrap HTML admin template</title>
+    <title>FotoProj - Register</title>
     <link rel="apple-touch-icon" href="../css/app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../css/app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
@@ -71,7 +71,7 @@
                                         <br>
                                         <c:choose>
 											<c:when test="${!empty porukaReg }">
-										        <p style="color:red;">${porukaReg }</p>
+												<p class="text-danger">${porukaReg }</p>
 											</c:when>
 											<c:otherwise>
 										        <p class="px-2">Fill the below form to create a new account.</p>

@@ -16,7 +16,7 @@
 <meta name="keywords"
 	content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
 <meta name="author" content="PIXINVENT">
-<title>Users</title>
+<title>FotoProj - Users</title>
 <link rel="apple-touch-icon"
 	href="../css/app-assets/images/ico/apple-icon-120.png">
 <link rel="shortcut icon" type="image/x-icon"
@@ -105,7 +105,7 @@
 											alt="avatar" height="40" width="40"></span>
 								</a>
 									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="/Foto/login/account_settings.jsp"> <i
+										<a class="dropdown-item" href="/Foto/users/account_settings.jsp"> <i
 											class="feather icon-user"></i> Edit Profile
 										</a>
 										<div class="dropdown-divider"></div>
@@ -257,6 +257,10 @@
 													<th>LAST NAME</th>
 													<th>USERNAME</th>
 													<th>EMAIL</th>
+													<th>ADMIN</th>
+													<c:if test="${!empty roleid &&roleid == 1 }">
+														<th></th>
+													</c:if>
 												</tr>
 											</thead>
 											<tbody>
@@ -267,6 +271,31 @@
 													<td>${u.lastName }</td>
 													<td>${u.username }</td>
 													<td>${u.email }</td>
+													<td>
+		                                                <fieldset>
+															<div class="vs-checkbox-con vs-checkbox-primary">
+																<c:choose>
+																	<c:when test="${u.role.roleId == 1 }">
+																		<input type="checkbox" disabled="disabled" checked="checked" value="true"> 
+																	</c:when>
+																	<c:otherwise>
+																		<input type="checkbox" disabled="disabled" value="false"> 
+																	</c:otherwise>
+																</c:choose>
+																<span class="vs-checkbox"> 
+																	<span class="vs-checkbox--check">
+																		<i class="vs-icon feather icon-check"></i>
+																	</span>
+																</span>
+															</div>
+														</fieldset>
+													</td>
+													<td>
+														<form action="/Foto/usercontroller/deleteUser" method="post">
+															<input type="hidden" name="userId" value="${u.userId }" />
+															<button type="submit" class="btn btn-outline-danger waves-effect waves-light"><i class="feather icon-trash-2"></i>Delete</button>
+														</form>
+													</td>
 												</tr>
 											</c:forEach>
 											</tbody>

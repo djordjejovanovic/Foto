@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;account_settings.jsp&apos; to &apos;users&apos;" description="Move &apos;account_settings.jsp&apos; to &apos;users&apos;" destination="src/main/webapp/users" element1="src/main/webapp/login/account_settings.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1675089015746" updateReferences="true"/>
+</session>

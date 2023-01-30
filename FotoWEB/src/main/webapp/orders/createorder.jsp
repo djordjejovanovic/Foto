@@ -15,7 +15,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Form Wizard - Vuexy - Bootstrap HTML admin template</title>
+    <title>FotoProj - Create Order</title>
     <link rel="apple-touch-icon" href="../css/app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../css/app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
@@ -90,7 +90,7 @@
 											alt="avatar" height="40" width="40"></span>
 								</a>
 									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="/Foto/login/account_settings.jsp"> <i
+										<a class="dropdown-item" href="/Foto/users/account_settings.jsp"> <i
 											class="feather icon-user"></i> Edit Profile
 										</a>
 										<div class="dropdown-divider"></div>
@@ -290,15 +290,6 @@
 													</div>
 												</div>
 											</div>
-											<!-- 
-											<div class="row">
-												<div class="d-flex align-items-center mb-1">
-	                                                <div class="input-group input-group-lg bootstrap-touchspin">
-	                                                    <span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span><input type="number" class="touchspin form-control" value="50"><span class="input-group-btn input-group-append bootstrap-touchspin-injected"><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span>
-	                                                </div>
-                                            	</div>
-											</div>
-											 -->
 											<button type="submit" class="btn btn-primary">Submit</button>
 										</form:form>
 									</div>

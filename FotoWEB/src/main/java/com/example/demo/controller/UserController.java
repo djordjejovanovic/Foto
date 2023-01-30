@@ -1,16 +1,12 @@
 package com.example.demo.controller;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.NamedNativeQuery;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,9 +25,15 @@ public class UserController {
 
 	@Autowired
 	UserRepository ur;
-	
+		
 	@Autowired
 	OrderController orderController;
+	
+	@Autowired 
+	BillController billController;
+	
+	@Autowired
+	PhotoController photoController;
 	
 	@RequestMapping(value = "register", method = RequestMethod.POST)
 	public String register(String email, String firstname, String lastname, String username, String password, String repassword, HttpServletRequest request,
@@ -106,14 +108,13 @@ public class UserController {
 			}
 
 			request.getSession().setAttribute("user", user);
+			request.setAttribute("user", user);
 			request.getSession().setAttribute("userid", user.getUserId());
 			request.getSession().setAttribute("username", user.getUsername());
 			request.getSession().setAttribute("firstname", user.getFirstName());
 			request.getSession().setAttribute("lastname", user.getLastName());
 			request.getSession().setAttribute("email", user.getEmail());
 			request.getSession().setAttribute("roleid", user.getRole().getRoleId());
-			
-			m.addAttribute("user", user);
 			
 			OrderStatisticModel osm = orderController.getOrderStatistic(user.getUserId());
 			request.getSession().setAttribute("orderStatPerc", osm);
@@ -159,7 +160,7 @@ public class UserController {
 			request.setAttribute("porukaUpdateSucc", "User succesfuly updated.");
 		}
 		
-		return "login/account_settings";
+		return "users/account_settings";
 	}
 	
 	@RequestMapping(value = "changePassword", method = RequestMethod.POST)
@@ -175,10 +176,10 @@ public class UserController {
 				
 				if(!user.getPassword().equals(encryptedPassw)) {
 					request.setAttribute("porukaPassWr", "Wrong old password.");
-					return "login/account_settings";
+					return "users/account_settings";
 				} else if (!newpassword.equals(renewpassword)) {
 					request.setAttribute("porukaPassWr", "Those passwords didn't match. Try again.");
-					return "login/account_settings";
+					return "users/account_settings";
 				}
 				
 				String newEncrPassw = aes.encrypt(newpassword);
@@ -187,7 +188,7 @@ public class UserController {
 			}
 			
 			request.setAttribute("porukaPassSucc", "Password succesfuly changed.");
-			return "login/account_settings";
+			return "users/account_settings";
 	}
 	
 	@RequestMapping(value = "viewAllUsers", method = RequestMethod.GET)
@@ -207,6 +208,23 @@ public class UserController {
 		}
 		
 		return "redirect:/";
+	}
+	
+	@RequestMapping(value = "deleteUser", method = RequestMethod.POST)
+	public String deleteUser(HttpServletRequest request, Model m, int userId) {
+		try {
+			User userForDelete = ur.findById(userId);
+			
+			billController.deleteBillForUser(userId);
+			orderController.deleteOrderForUser(userId);
+			
+			ur.delete(userForDelete);
+			
+			return "redirect:/usercontroller/viewAllUsers";
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "redirect:/usercontroller/viewAllUsers";
+		}
 	}
 	
 }

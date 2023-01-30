@@ -16,7 +16,7 @@
 <meta name="keywords"
 	content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
 <meta name="author" content="PIXINVENT">
-<title>My Orders</title>
+<title>FotoProj - My Bills</title>
 <link rel="apple-touch-icon"
 	href="../css/app-assets/images/ico/apple-icon-120.png">
 <link rel="shortcut icon" type="image/x-icon"
@@ -105,7 +105,7 @@
 								</a>
 									<div class="dropdown-menu dropdown-menu-right">
 										<a class="dropdown-item"
-											href="/Foto/login/account_settings.jsp"> <i
+											href="/Foto/users/account_settings.jsp"> <i
 											class="feather icon-user"></i> Edit Profile
 										</a>
 										<div class="dropdown-divider"></div>

@@ -1,0 +1,18 @@
+package com.example.demo.controller;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import model.Photo;
+
+@Controller
+@RequestMapping(value = "photocontroller")
+public class PhotoController {
+
+	public void deletePhotoForUser(int userId) {
+		List<Photo> photos = br.findAllByUserId(userId);
+	}
+	
+}
