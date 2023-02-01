@@ -1,0 +1,115 @@
+package com.example.demo;
+
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+
+public class OrderReportModel implements Comparator<OrderReportModel>{
+
+	public int userId;
+	
+	public String firstName;
+	
+	public String lastName;
+	
+	public String username;
+	
+	public String email;
+	
+	public String orderName;
+	
+	public Date creationDate;
+	
+	public int price;
+	
+	public String status;
+
+
+	public OrderReportModel() {
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getOrderName() {
+		return orderName;
+	}
+
+	public void setOrderName(String orderName) {
+		this.orderName = orderName;
+	}
+
+	public Date getCreationDate() {
+		return creationDate;
+	}
+
+	public void setCreationDate(Date creationDate) {
+		this.creationDate = creationDate;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+
+	@Override
+	public int compare(OrderReportModel o1, OrderReportModel o2) {
+		return o1.getUserId() - o2.getUserId();
+	}
+	
+	Collections.sort(list, new Comparator<OrderReportModel>() {
+	    @Override
+		public int compare(Student o1, Student o2) {
+	        return o1.getAge().compareTo(o2.getAge());
+	    }
+	});
+	
+}

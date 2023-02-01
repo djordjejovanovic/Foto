@@ -246,10 +246,10 @@
 									<p class="text-success">${saveOrderSucc }</p>
 								</c:if>
 								<div style="margin-left: 90%;">
-									<form action="/Foto/ordercontroller/reportOrder", method="post">
-								 		<input type="hidden" name="type" value="0" />
-									 	<button type="submit" class="btn btn-primary"
-										style="margin-top: 10px; margin-left: 10px">Report</button>
+									<form action="/Foto/ordercontroller/myReportOrder", method="post">
+									 	<button type="submit" class="btn btn-primary">
+											<i class="feather icon-file-text"></i> Report
+										</button>
 									</form>
 								</div>
 							</div>

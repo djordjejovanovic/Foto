@@ -282,7 +282,7 @@
                                                         </div>
                                                         <div class="controls">
                                                         <c:if test="${!empty porukaUpdateSucc }">
-                                                        	<p class="text-success">${porukaUpdateSucc }</p>
+                                                        	<p class="text-success col-12">${porukaUpdateSucc }</p>
 														</c:if>
                                                         </div>
                                                         <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
@@ -324,10 +324,10 @@
                                                         <div class="controls">
                                                         	<c:choose>
 																<c:when test="${!empty porukaPassWr }">
-																	<p class="text-danger">${porukaPassWr }</p>
+																	<p class="text-danger col-12">${porukaPassWr }</p>
 																</c:when>
 																<c:otherwise>
-																	<p class="text-success">${porukaPassSucc }</p>
+																	<p class="text-success col-12">${porukaPassSucc }</p>
 																</c:otherwise>
 															</c:choose>
                                                         </div>

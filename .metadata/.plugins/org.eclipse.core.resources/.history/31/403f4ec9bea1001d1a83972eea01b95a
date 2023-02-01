@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AllOrdersReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="65447ea1-7f79-4e61-81e8-f19cfe8d66e7">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="userId" class="java.lang.Integer"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="username" class="java.lang.String"/>
+	<field name="orderName" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="creationDate" class="java.util.Date"/>
+	<field name="price" class="java.lang.Integer"/>
+	<field name="status" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="81" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="80" width="556" height="1" uuid="11c05bec-4df1-4194-9456-e8ffcee6e8a1">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<textField pattern="dd. MMM. yyyy.">
+				<reportElement x="465" y="10" width="84" height="20" uuid="5e13a93b-be5b-4ed2-91b6-77bd573b1653"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="5" width="210" height="25" uuid="ea0dfb18-be84-41a4-bede-9f4814d7979e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FotoProj]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="60" width="205" height="15" uuid="33e41f41-2a5f-4a42-bfbc-542bd77e6fe9"/>
+				<text><![CDATA[+381658067167]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="30" width="205" height="15" uuid="b069e92c-66f5-4cc5-ae44-ba09703ab06d"/>
+				<text><![CDATA[Djordje Jovanovic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="45" width="205" height="15" uuid="9c2c4900-f798-4736-92d3-2ae87f76069f"/>
+				<text><![CDATA[djordje.jovanovic.4896@gmail.com]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="77" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="47" width="556" height="30" backcolor="#E6E8E9" uuid="fb4b4c9b-f0c3-4d93-81e3-bb92996953d9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="9" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[THANK YOU FOR ORDERS]]></text>
+			</staticText>
+			<textField pattern="dd. MMM. yyyy.">
+				<reportElement x="430" y="10" width="116" height="20" uuid="e2571304-fed1-4312-bd2f-c85cedf80ddd"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

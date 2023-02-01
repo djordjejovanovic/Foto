@@ -246,11 +246,22 @@
 								<c:if test="${!empty saveOrderSucc }">
 									<p style="color: green;">${saveOrderSucc }</p>
 								</c:if>
-								<div style="margin-left: 90%;">
-									<form action="/Foto/ordercontroller/reportOrder", method="post">
-										<input type="hidden" name="type" value="1" />
-										<button type="submit" class="btn btn-primary"
-											style="margin-top: 10px; margin-left: 10px">Report</button>
+								<div style="margin-left: 80%;">
+									<form action="/Foto/ordercontroller/allReportOrder", method="post">
+										<div class="form-group">
+											<label for="format">Chose user for report</label> 
+											<select	class="custom-select form-control" name="userIdForReport">
+												<c:if test="${!empty users }">
+													<option value="0">All Users</option>
+													<c:forEach items="${users }" var="u">
+														<option value="${u.userId }">${u.firstName } ${u.lastName }</option>
+													</c:forEach>
+												</c:if>
+											</select>
+										</div>
+										<button type="submit" class="btn btn-primary" style="margin-left: 50%">
+											<i class="feather icon-file-text"></i> Report
+										</button>
 									</form>
 								</div>
 							</div>

@@ -1,0 +1,8 @@
+package com.example.demo;
+
+public enum TypeEnum {
+
+	MY (0),
+	
+	ALL (1)
+}

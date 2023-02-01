@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SviClanoviReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="10f4784b-db45-415e-8e65-8783511739e5">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="imeBiblioteke" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="ime" class="java.lang.String"/>
+	<field name="prezime" class="java.lang.String"/>
+	<field name="adresa" class="java.lang.String"/>
+	<field name="datumRodjenja" class="java.util.Date"/>
+	<field name="datumUpisa" class="java.util.Date"/>
+	<variable name="ukupnoClanova" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{ime}]]></variableExpression>
+	</variable>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{datumUpisa}]]></groupExpression>
+		<groupHeader>
+			<band height="91">
+				<staticText>
+					<reportElement x="39" y="30" width="70" height="30" uuid="022947c0-66dd-46f7-9429-a66fae4e5cf5"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[Datum upisa:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="109" y="30" width="100" height="30" uuid="513386a9-cf63-482f-9a8a-2a6536e628f9"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{datumUpisa}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="339" y="60" width="100" height="30" forecolor="#050505" backcolor="#8BBBCC" uuid="1b3a1ec1-0e9c-4180-ae57-210929d14430"/>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#080707"/>
+						<leftPen lineWidth="1.0" lineColor="#080707"/>
+						<bottomPen lineWidth="1.0" lineColor="#080707"/>
+						<rightPen lineWidth="1.0" lineColor="#080707"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Datum rodjenja]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="239" y="60" width="100" height="30" forecolor="#050505" backcolor="#8BBBCC" uuid="21c86701-d84d-4f03-af23-938a9d0290c5"/>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#080707"/>
+						<leftPen lineWidth="1.0" lineColor="#080707"/>
+						<bottomPen lineWidth="1.0" lineColor="#080707"/>
+						<rightPen lineWidth="1.0" lineColor="#080707"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Adresa]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="140" y="60" width="100" height="30" forecolor="#050505" backcolor="#8BBBCC" uuid="32005716-18a4-4269-8d29-52aa3e184798"/>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#080707"/>
+						<leftPen lineWidth="1.0" lineColor="#080707"/>
+						<bottomPen lineWidth="1.0" lineColor="#080707"/>
+						<rightPen lineWidth="1.0" lineColor="#080707"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Prezime]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="39" y="60" width="100" height="30" forecolor="#050505" backcolor="#8BBBCC" uuid="9965a69b-3388-4dd9-9cc2-c0e93da97d73"/>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#080707"/>
+						<leftPen lineWidth="1.0" lineColor="#080707"/>
+						<bottomPen lineWidth="1.0" lineColor="#080707"/>
+						<rightPen lineWidth="1.0" lineColor="#080707"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Ime]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="30" width="400" height="30" forecolor="#581CAD" uuid="ed3032bf-239d-4cb9-b44b-a78a7fc07384"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Spisak clanova biblioteke]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="330" y="0" width="225" height="20" uuid="175cbfa7-ac2b-4ad0-abb5-9f715d5cde33">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{imeBiblioteke}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="0" width="100" height="30" uuid="dedb1958-6d21-4ed7-870c-178bfb884768"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="100" height="30" uuid="1bde2a75-60b7-4490-9c2a-2be37ad33739"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{prezime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="100" height="30" uuid="e46f5213-9a5a-46a5-9810-a8c6418d1f80"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{adresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="100" height="30" uuid="c7f7a71c-e0fc-4b19-b638-b4e6fd1e3c61"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{datumRodjenja}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="505" y="24" width="50" height="30" uuid="4d6a2af2-e477-42d6-be54-5f1ef42e52fd"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="87" splitType="Stretch">
+			<textField>
+				<reportElement x="140" y="50" width="100" height="30" uuid="61962850-d38d-42d4-b375-c212d62a9de2"/>
+				<textFieldExpression><![CDATA[$V{ukupnoClanova}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="50" width="100" height="30" uuid="977d2503-8e8f-41f1-9ac4-f02ebe32adf0"/>
+				<text><![CDATA[Ukupno clanova:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MyOrders" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4eedbb89-b4f6-4469-9ab6-f642a1688cf7">
+	<property name="template.engine" value="tabular_template"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true" pdfFontName="Times-Roman"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#EEEFF0"/>
+		</conditionalStyle>
+	</style>
+	<style name="Table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="tableDataset" uuid="9d813860-affc-4963-8e09-de673aaf060c">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="orderName" class="java.lang.String"/>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="orderName" class="java.lang.String"/>
+	<field name="status" class="java.lang.String"/>
+	<field name="price" class="java.lang.Integer"/>
+	<field name="creationDate" class="java.util.Date"/>
+	<field name="username" class="java.lang.String"/>
+	<variable name="orderCount" class="java.lang.Integer" calculation="Count"/>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{username}]]></groupExpression>
+		<groupHeader>
+			<band height="60">
+				<staticText>
+					<reportElement mode="Opaque" x="180" y="30" width="100" height="30" forecolor="#C2C6DC" backcolor="#10163A" uuid="4714248a-ef56-4f5f-94ed-2504d8d787a9"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[STATUS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="80" y="30" width="100" height="30" forecolor="#C2C6DC" backcolor="#10163A" uuid="ba46b859-6d00-43bc-9e4e-31ea00986f87"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ORDER NAME]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="280" y="30" width="100" height="30" forecolor="#C2C6DC" backcolor="#10163A" uuid="7cece3bb-b15d-4fea-8cfd-71baf41bc8f5"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PRICE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="380" y="30" width="100" height="30" forecolor="#C2C6DC" backcolor="#10163A" uuid="3d68be01-bfdc-409a-9a08-508df8830b58"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[CREATION DATE]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="43"/>
+		</groupFooter>
+	</group>
+	<title>
+		<band height="143" splitType="Stretch">
+			<staticText>
+				<reportElement x="15" y="95" width="95" height="25" uuid="57aed2b1-4f4e-40a3-a6ad-54dae8dd4c5a">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Report for:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="80" width="556" height="1" uuid="806ce5df-1219-4876-ae0c-ca7405b1f246">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="10" y="5" width="210" height="25" uuid="e622555d-198b-4ccd-a4a1-c59c53304058">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FotoProj]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="60" width="205" height="15" uuid="b8cc42fd-b569-497d-834d-7e854040ad18"/>
+				<text><![CDATA[+381658067167]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="30" width="205" height="15" uuid="c226e44d-3bb5-4145-b0b3-903bf1d79fde"/>
+				<text><![CDATA[Djordje Jovanovic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="45" width="205" height="15" uuid="b96f7183-44f8-43ad-ba60-43d8fbf50b6e"/>
+				<text><![CDATA[djordje.jovanovic.4896@gmail.com]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="105" width="390" height="15" uuid="1f4053e7-c32b-4965-9356-3e0939743a42">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firstName}.concat(" ").concat($F{lastName})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="120" width="390" height="15" uuid="df542623-37b5-4689-9ebc-b5e2316229d1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="30">
+			<textField>
+				<reportElement mode="Opaque" x="180" y="0" width="100" height="30" forecolor="#10163A" backcolor="#C2C6DC" uuid="5e6acad4-9342-4bc5-b861-78761bfe9556"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="80" y="0" width="100" height="30" forecolor="#10163A" backcolor="#C2C6DC" uuid="d1d6fc53-b93d-4543-a891-ea81c4d4e47e"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{orderName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="280" y="0" width="100" height="30" forecolor="#10163A" backcolor="#C2C6DC" uuid="6bb91bc4-3bbc-400b-9391-96cfa1630660"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{price}.toString().concat(" RSD")]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd. MMM. yyyy.">
+				<reportElement mode="Opaque" x="380" y="0" width="100" height="30" forecolor="#10163A" backcolor="#C2C6DC" uuid="d1916e97-d878-4716-92ef-d851cc3a038b"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#10163A"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{creationDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="52"/>
+	</pageFooter>
+	<summary>
+		<band height="82" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="47" width="556" height="30" backcolor="#E6E8E9" uuid="36aa233d-4305-48e6-974a-1bbf89bb3c8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="9" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[THANK YOU FOR ORDERS]]></text>
+			</staticText>
+			<textField pattern="dd. MMM. yyyy.">
+				<reportElement x="440" y="12" width="116" height="20" uuid="bb10dbe1-0a4f-4722-9953-c163b63cf979"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
