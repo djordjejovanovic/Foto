@@ -26524,3 +26524,435 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2023-02-01 02:52:37,355 [Worker-156: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
 2023-02-01 02:52:37,723 [Worker-156: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
 2023-02-01 02:52:37,965 [Worker-156: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 21:55:17,062 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-02-01 22:01:12,164 [Worker-10: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier  to /FotoJPA/target/classes
+2023-02-01 22:01:15,472 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:01:15,472 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:01:15,526 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:01:15,582 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:01:15,639 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:01:15,639 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:01:15,640 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:01:19,900 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:01:19,905 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:01:19,914 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:01:19,925 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:01:19,944 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:01:19,944 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:01:19,944 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:01:29,967 [Worker-16: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:01:30,318 [Worker-16: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:01:30,613 [Worker-16: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:03:45,613 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:03:45,613 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:03:45,615 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:03:45,625 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:03:45,631 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:03:45,631 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:03:45,631 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:03:49,327 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:03:49,327 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:03:49,329 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:03:49,335 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:03:49,343 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:03:49,344 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:03:49,344 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:04:42,918 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:04:42,919 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:04:42,922 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:04:42,928 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:04:42,934 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:04:42,935 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:04:42,935 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:04:52,475 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:04:52,475 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:04:52,477 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:04:52,483 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:04:52,489 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:04:52,490 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:04:52,490 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:05:10,079 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:05:10,080 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:05:10,081 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:05:10,088 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:05:10,106 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:05:10,109 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:05:10,110 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:05:26,823 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:05:26,823 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:05:26,824 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:05:26,831 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:05:26,842 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:05:26,843 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:05:26,843 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:05:36,381 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:05:36,382 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:05:36,386 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:05:36,396 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:05:36,403 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:05:36,404 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:05:36,404 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:05:50,443 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:05:50,443 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:05:50,445 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:05:50,451 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:05:50,457 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:05:50,457 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:05:50,457 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:06:09,628 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:06:09,628 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:06:09,630 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:06:09,650 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:06:09,657 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:06:09,657 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:06:09,657 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:06:36,538 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:06:36,539 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:06:36,540 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:06:36,547 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:06:36,553 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:06:36,553 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:06:36,553 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:07:02,304 [Worker-10: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:07:02,592 [Worker-10: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:07:02,862 [Worker-10: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:08:01,664 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:08:01,665 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:08:01,667 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:08:01,730 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:08:01,768 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:08:01,769 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:08:01,769 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:08:12,232 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:08:12,232 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:08:12,237 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:08:12,275 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:08:12,282 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:08:12,282 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:08:12,283 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:08:16,114 [Worker-17: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:08:16,470 [Worker-17: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:08:16,826 [Worker-17: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:09:44,671 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:09:44,672 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:09:44,695 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:09:44,709 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:09:44,722 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:09:44,722 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:09:44,723 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:10:05,656 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:10:05,656 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:10:05,658 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:10:05,664 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:10:05,672 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:10:05,672 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:10:05,672 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:10:23,298 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:10:23,298 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:10:23,299 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:10:23,306 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:10:23,330 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:10:23,330 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:10:23,330 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:10:37,341 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:10:37,342 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:10:37,344 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:10:37,350 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:10:37,355 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:10:37,355 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:10:37,355 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:10:45,769 [Worker-19: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:10:45,996 [Worker-19: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:10:46,219 [Worker-19: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:13:03,184 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:13:03,184 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:13:03,185 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:13:03,194 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:13:03,199 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:13:03,199 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:13:03,200 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:13:57,572 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:13:57,572 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:13:57,573 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:13:57,639 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:13:57,644 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:13:57,644 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:13:57,644 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:14:02,197 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:14:02,197 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:14:02,198 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:14:02,206 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:14:02,212 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:14:02,212 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:14:02,212 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:14:10,411 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:14:10,411 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:14:10,412 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:14:10,419 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:14:10,424 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:14:10,424 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:14:10,424 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:14:12,602 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:14:12,602 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:14:12,603 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:14:12,610 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:14:12,616 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:14:12,616 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:14:12,616 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:14:26,181 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:14:26,181 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:14:26,182 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:14:26,188 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:14:26,195 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:14:26,195 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:14:26,195 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:14:28,203 [Worker-0: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:14:28,612 [Worker-0: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:14:28,971 [Worker-0: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:16:04,606 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:16:04,607 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:16:04,609 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:16:04,638 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:16:04,644 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:16:04,644 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:16:04,644 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:16:30,677 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:16:30,677 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:16:30,679 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:16:30,704 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:16:30,708 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:16:30,709 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:16:30,709 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:16:38,275 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:16:38,275 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:16:38,276 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:16:38,282 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:16:38,286 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:16:38,286 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:16:38,287 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:16:42,992 [Worker-19: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:16:43,195 [Worker-19: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:16:43,446 [Worker-19: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:17:59,731 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:17:59,732 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:17:59,733 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-01 22:17:59,777 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-01 22:17:59,784 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-01 22:17:59,784 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-01 22:17:59,784 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-01 22:18:04,268 [Worker-18: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:18:04,634 [Worker-18: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-01 22:18:04,976 [Worker-18: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 00:38:42,363 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-02-02 00:40:07,630 [Worker-9: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier  to /FotoJPA/target/classes
+2023-02-02 00:40:08,368 [Worker-9: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 00:40:08,890 [Worker-9: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 00:40:09,400 [Worker-9: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 00:45:31,327 [Worker-0: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 00:45:31,686 [Worker-0: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 00:45:32,074 [Worker-0: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 00:46:00,545 [Worker-16: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 00:46:00,935 [Worker-16: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 00:46:01,249 [Worker-16: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 00:50:40,947 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 00:50:40,948 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 00:50:40,958 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-02 00:50:40,998 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-02 00:50:41,085 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 00:50:41,086 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 00:50:41,086 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 00:50:48,204 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 00:50:48,206 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 00:50:48,217 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-02 00:50:48,230 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-02-02 00:50:48,248 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 00:50:48,249 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 00:50:48,249 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 00:51:10,040 [Worker-15: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 00:51:10,430 [Worker-15: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 00:51:10,748 [Worker-15: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:15:27,905 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:15:27,905 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:15:27,906 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:15:27,906 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:15:27,912 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:15:27,912 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:15:27,912 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:15:36,416 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:15:36,416 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:15:36,416 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:15:36,416 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:15:36,423 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:15:36,423 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:15:36,423 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:15:44,045 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:15:44,045 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:15:44,046 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:15:44,046 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:15:44,049 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:15:44,049 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:15:44,049 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:15:52,325 [Worker-23: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:15:52,611 [Worker-23: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:15:52,881 [Worker-23: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:17:54,467 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:17:54,467 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:17:54,468 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:17:54,468 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:17:54,485 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:17:54,485 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:17:54,485 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:17:58,078 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:17:58,078 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:17:58,079 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:17:58,080 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:17:58,087 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:17:58,087 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:17:58,087 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:18:03,077 [Worker-29: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:18:03,293 [Worker-29: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:18:03,526 [Worker-29: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:18:38,119 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:18:38,119 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:18:38,119 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:18:38,119 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:18:38,125 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:18:38,125 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:18:38,125 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:18:44,229 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:18:44,229 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:18:44,230 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:18:44,230 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:18:44,233 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:18:44,233 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:18:44,233 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:20:15,112 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:20:15,112 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:20:15,112 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:20:15,113 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:20:15,117 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:20:15,117 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:20:15,117 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:20:19,653 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:20:19,653 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:20:19,654 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:20:19,654 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:20:19,657 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:20:19,657 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:20:19,657 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:20:28,884 [Worker-29: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:20:29,090 [Worker-29: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:20:29,298 [Worker-29: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:22:08,794 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:22:08,795 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:22:08,795 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:22:08,795 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:22:08,799 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:22:08,799 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:22:08,799 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:23:01,255 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:23:01,255 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:23:01,255 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:23:01,256 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:23:01,262 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:23:01,262 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:23:01,262 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:23:11,601 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:23:11,601 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:23:11,601 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:23:11,601 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:23:11,605 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:23:11,605 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:23:11,605 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:23:21,650 [Worker-28: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:23:21,864 [Worker-28: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:23:22,117 [Worker-28: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:24:24,959 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:24:24,959 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:24:24,960 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:24:24,960 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:24:24,964 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:24:24,964 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:24:24,964 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:24:41,174 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:24:41,175 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:24:41,175 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:24:41,175 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:24:41,180 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:24:41,180 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:24:41,180 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:24:59,228 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:24:59,228 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:24:59,229 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:24:59,229 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:24:59,233 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:24:59,233 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:24:59,233 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:25:17,163 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:25:17,163 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:25:17,163 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:25:17,164 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:25:17,167 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:25:17,167 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:25:17,167 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:25:21,602 [Worker-28: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:25:21,946 [Worker-28: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:25:22,287 [Worker-28: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:27:57,943 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:27:57,943 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:27:57,944 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:27:57,944 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:27:57,947 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:27:57,947 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:27:57,947 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:28:02,252 [Worker-29: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:28:02,495 [Worker-29: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:28:02,774 [Worker-29: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:29:52,695 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:29:52,695 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:29:52,695 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:29:52,695 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:29:52,706 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:29:52,706 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:29:52,706 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:31:26,698 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:31:26,699 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:31:26,699 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:31:26,699 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:31:26,704 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:31:26,705 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:31:26,705 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:32:30,581 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:32:30,581 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:32:30,581 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:32:30,581 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:32:30,585 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:32:30,585 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:32:30,585 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:32:43,061 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:32:43,061 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:32:43,061 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:32:43,061 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:32:43,064 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:32:43,064 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:32:43,064 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:32:55,058 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:32:55,058 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:32:55,059 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:32:55,059 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:32:55,062 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:32:55,062 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:32:55,062 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:33:01,147 [Worker-27: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:33:01,365 [Worker-27: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:33:01,588 [Worker-27: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:36:08,188 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:36:08,188 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:36:08,188 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:36:08,189 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-02 01:36:08,194 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-02 01:36:08,195 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-02 01:36:08,195 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\PMF NS\Razvoj Informacionih Sistema\Projekat\NewRepo\FotoWEB\src\test\resources
+2023-02-02 01:38:57,334 [Worker-42: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:38:57,535 [Worker-42: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes
+2023-02-02 01:38:57,744 [Worker-42: Launching FotoWEB - FotoWebApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/FotoJPA: FotoJPA:FotoJPA:0.0.1-SNAPSHOT with classifier null to /FotoJPA/target/classes

@@ -261,6 +261,20 @@
 					                    </div>
 		                			</section>
 								</div>
+								
+								<div class="card" style="margin-left: 1%; width: 40%;">
+                                    <div class="card-body">
+                                        <p>We are here:</p>
+                                        <div class="mapouter">
+										<div class="gmap_canvas">
+											<iframe width="100%" height="400" id="gmap_canvas"
+												src="https://maps.google.com/maps?q=PMF%20novi%20sad&t=&z=17&ie=UTF8&iwloc=&output=embed"
+												frameborder="0" scrolling="no" marginheight="0"
+												marginwidth="0"></iframe>
+										</div>
+									</div>
+                                    </div>
+                                </div>
 							</c:when>
 							<c:otherwise>
 								<div class="col-lg-12 col-md-12 col-sm-12">

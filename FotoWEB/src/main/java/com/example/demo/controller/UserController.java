@@ -82,6 +82,7 @@ public class UserController {
 			
 		} catch (Exception e1) {
 			e1.printStackTrace();
+			request.setAttribute("porukaReg", "Faild registration.");
 			return "login/registration";
 		}
 	}
