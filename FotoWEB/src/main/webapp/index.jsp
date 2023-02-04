@@ -262,7 +262,7 @@
 		                			</section>
 								</div>
 								
-								<div class="card" style="margin-left: 1%; width: 40%;">
+								<div class="card" style="margin-left: 1%; width: 50%; height: 500px;">
                                     <div class="card-body">
                                         <p>We are here:</p>
                                         <div class="mapouter">
